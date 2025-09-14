@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation";
 
 function isSelectedStyle(pathname, targetPath) {
-    return pathname.startsWith(targetPath) ? "text-green-500" : "";
+    return pathname === targetPath ? "text-green-500" : "";
 }
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header className="w-full mb-6">
-            <nav className="px-6 py-4 border-b border-gray-500">
+            <nav className="px-6 py-4 border-b border-gray-500 dark:background-gray-900">
                 <ul className="flex justify-between text-xl">
                     <li>
                         <Link href="/resume" className={`text-gray-900 hover:text-gray-600 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
