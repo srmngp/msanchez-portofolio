@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  font-family: "Chromate-Regular";
+  font-size: 120px;
+  line-height: 110px;
+}
+
+h2 {
+  font-family: "Chromate-Regular";
+  font-size: 50px;
+  line-height: auto;
+}
+
+@font-face {
+  font-family: "Chromate-Regular";
+  src: url("/fonts/Chromate-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

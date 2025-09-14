@@ -1,0 +1,1 @@
+I am creating a web portfolio using react and nextjs version 15.
