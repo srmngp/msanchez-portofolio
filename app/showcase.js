@@ -10,7 +10,7 @@ function ProjectImage({ src, alt }) {
             alt={alt}
             width={800}
             height={500}
-            className="rounded-lg object-cover w-full h-auto"
+            className="object-cover w-full h-auto"
             priority
         />
     );

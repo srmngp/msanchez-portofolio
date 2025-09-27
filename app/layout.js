@@ -10,11 +10,9 @@ export default function ArtProductionLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased ">
-      <div className="min-h-screen">
-        <div className="mx-4 md:mx-12">
+        <div className="min-h-screen">
           <main>{children}</main>
         </div>
-      </div>
       </body>
     </html>
   );

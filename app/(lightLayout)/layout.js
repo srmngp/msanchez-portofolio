@@ -4,14 +4,16 @@ import "../globals.css";
 import Header from "../header";
 import Footer from "../footer";
 
-export default function ArtProductionLayout({ children }) {
+export default function LightLayout({ children }) {
   return (
     <div className="bg-white text-black">
-      <Header />
+      <div className="mx-4 md:mx-12">
+        <Header />
 
-      <main>{children}</main>
+          <main>{children}</main>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
