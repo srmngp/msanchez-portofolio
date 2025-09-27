@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import ProjectDetails from "../ProjectDetails";
 
 export default function BerlinSonar() {

@@ -5,7 +5,7 @@ import { Mail, Linkedin, Instagram } from "lucide-react"
 export default function Footer() {
     return (
         <footer>
-            <hr />
+            <hr className="my-6"/>
             <div className="container mx-auto p-10">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
 
