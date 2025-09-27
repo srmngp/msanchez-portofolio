@@ -1,13 +1,13 @@
 "use client"
 
-import { Mail, Phone, MapPin, Linkedin, Instagram } from "lucide-react"
+import { Mail, Linkedin, Instagram } from "lucide-react"
 
 export default function Footer() {
     return (
         <footer>
-            <hr className="border-gray-600" />
+            <hr />
             <div className="container mx-auto p-10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-600 place-items-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
 
                     <div className="flex space-x-3">
                         <Mail className="w-4 h-4 " />
@@ -25,7 +25,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex space-x-3">
-                        <p className="text-sm text-gray-600">© 2025 Maria Sanchez Molina</p>
+                        <p className="text-sm2">© 2025 Maria Sanchez Molina</p>
                     </div>
 
                 </div>

@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header className="w-full mb-6">
-            <nav className="px-6 py-4 border-b border-gray-500 dark:background-gray-900">
+            <nav className="px-6 py-4 border-b dark:background-gray-900">
                 <ul className="flex justify-between text-xl">
                     <li>
                         <Link href="/resume" className={`transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
