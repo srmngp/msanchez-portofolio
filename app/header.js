@@ -15,23 +15,23 @@ export default function Header() {
             <nav className="px-6 py-4 border-b border-gray-500 dark:background-gray-900">
                 <ul className="flex justify-between text-xl">
                     <li>
-                        <Link href="/resume" className={`text-gray-900 hover:text-gray-600 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
+                        <Link href="/resume" className={`transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
                             Resume
                         </Link>
                     </li>
                     <div className="flex space-x-8">
                         <li>
-                            <Link href="/" className={`text-gray-900 hover:text-gray-600 transition-colors ${isSelectedStyle(pathname, "/")}`}>
+                            <Link href="/" className={`transition-colors ${isSelectedStyle(pathname, "/")}`}>
                                 Design Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href="/art-production" className={`text-gray-900 hover:text-gray-600 transition-colors ${isSelectedStyle(pathname, "/art-production")}`}>
+                            <Link href="/art-production" className={`transition-colors ${isSelectedStyle(pathname, "/art-production")}`}>
                                 Art Production
                             </Link>
                         </li>
                         <li>
-                            <Link href="/personal-data" className={`text-gray-900 hover:text-gray-600 transition-colors ${isSelectedStyle(pathname, "/personal-data")}`}>
+                            <Link href="/personal-data" className={`transition-colors ${isSelectedStyle(pathname, "/personal-data")}`}>
                                 Personal Data
                             </Link>
                         </li>
