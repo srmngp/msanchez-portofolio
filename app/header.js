@@ -1,14 +1,17 @@
-"use client"
+'use client'
 
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 
 function isSelectedStyle(pathname, targetPath) {
-    return pathname === targetPath ? "text-green-500" : "";
+    if (targetPath === "/") {
+        return pathname === "/" || pathname.startsWith("/design-projects") ? "text-green-500" : "";
+    }
+    return pathname.startsWith(targetPath) ? "text-green-500" : "";
 }
 
 export default function Header() {
-    const pathname = usePathname();
+      const pathname = usePathname()
 
     return (
         <header className="w-full mb-6">

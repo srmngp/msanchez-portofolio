@@ -6,12 +6,15 @@ export const metadata = {
   description: "Personal portfolio",
 };
 
-export default function ArtProductionLayout({ children }) {
+export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className="antialiased ">
         <div className="min-h-screen">
-          <main>{children}</main>
+          <main>
+            {children}
+          </main>
         </div>
       </body>
     </html>
