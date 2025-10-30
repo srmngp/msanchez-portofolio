@@ -22,7 +22,7 @@ export default function Header() {
                             Resume
                         </Link>
                     </li>
-                    <div className="flex space-x-8">
+                    <div className="flex space-x-20">
                         <li>
                             <Link href="/" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/")}`}>
                                 Design Projects
