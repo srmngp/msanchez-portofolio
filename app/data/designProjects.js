@@ -1,0 +1,8 @@
+// Central list of design project routes (order matters for prev/next navigation)
+export const designProjectRoutes = [
+  "/design-projects/berlin-sonar",
+  "/design-projects/cosmopolis",
+  "/design-projects/internship",
+];
+
+export default designProjectRoutes;
