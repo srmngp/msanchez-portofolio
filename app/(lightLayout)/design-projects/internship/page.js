@@ -1,13 +1,12 @@
 "use client"
 
-import Image from "next/image";
 import ProjectDetails from "../ProjectDetails";
 import ProjectFooter from "../ProjectFooter";
 
 export default function Internship() {
   return (
         <ProjectDetails
-          image="/design-projects/internship.png"
+          image="/design-projects/xbit/portada.jpg"
           title="Internship"
           description={[
             "Descripción del proyecto Internship.",

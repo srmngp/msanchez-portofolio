@@ -22,13 +22,11 @@ function Project({ href, images, title, description }) {
             <Link href={href} className="block transition rounded-lg p-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
 
-                    {/* Images or custom content */}
                     <div className="lg:col-span-2">{images}</div>
 
-                    {/* Sidebar info */}
                     <div className="text-right lg:col-span-1 self-start">
                         <h3 className="font-semibold mb-2">{title}</h3>
-                        <div className="text-sm text-gray-600">{description}</div>
+                        <div className="text-sm">{description}</div>
                     </div>
                 </div>
             </Link>
@@ -40,6 +38,20 @@ function Project({ href, images, title, description }) {
 export default function Showcase() {
     return (
         <section>
+
+            {/* XBIT*/}
+            <Project
+                href="design-projects/xbit"
+                images={<ProjectImage src="/design-projects/xbit/portada_xbit.jpg" alt="XBIT" />}
+                title="XBIT"
+                description={
+                    <>
+                        <p>Project management</p>
+                        <p>Branding</p>
+                        <p>Event logistics</p>
+                    </>
+                }
+            />
 
             {/* Berlin sonar*/}
             <Project
