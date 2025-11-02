@@ -59,21 +59,21 @@ export default function Footer() {
         <footer>
             <hr className="my-6" />
             <div className="container py-10">
-                {/* top row: equal-width columns using percentage widths so gaps are consistent */}
-                <div className="w-full flex flex-wrap items-center">
-                    <div className="w-full md:w-1/4 text-left">
+                {/* top row: two columns on small screens, four-aligned layout on md+ where middle two share remaining space */}
+                <div className="w-full grid grid-cols-2 gap-6 items-center md:flex md:items-center md:gap-6">
+                    <div className="text-center md:text-left md:flex-none">
                         <span className="text-sm">ms.maria.sanchez.molina@gmail.com</span>
                     </div>
 
-                    <div className="w-full md:w-1/4 text-center">
+                    <div className="text-center md:flex-1 md:min-w-0">
                         <span className="text-sm">@m.sanchezmolina</span>
                     </div>
 
-                    <div className="w-full md:w-1/4 text-center">
+                    <div className="text-center md:flex-1 md:min-w-0">
                         <span className="text-sm">LinkedIn Profile</span>
                     </div>
 
-                    <div className="w-full md:w-1/4 text-right">
+                    <div className="text-center md:text-right md:flex-none">
                         <span className="text-sm">Berlin, Germany</span>
                     </div>
                 </div>
