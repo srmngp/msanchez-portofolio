@@ -10,7 +10,7 @@ export default function ProjectDetails({ image, title, description, gallery, gal
           alt={title}
           width={800}
           height={500}
-          className="rounded-lg object-cover w-full h-auto"
+          className="object-cover w-full h-auto"
           priority
         />
       </div>
