@@ -1,15 +1,15 @@
 "use client"
 
-import { ImageFrame } from "../../../components/Gallery";
-import ProjectDetails from "../../../components/ProjectDetails";
-import ProjectFooter from "../../../components/ProjectFooter";
+import { ImageFrame } from "../../../components/Gallery"
+import ProjectDetails from "../../../components/ProjectDetails"
+import ProjectFooter from "../../../components/ProjectFooter"
 
 export default function BerlinSonar() {
-  
-    const getFullWidthImageStyle = () => "w-full max-w-[1376px] overflow-hidden md:h-[900px]";
-    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6";
-    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full";
-    const getFullRowStyle = () => "w-full max-w-[1376px]";
+
+    const getFullWidthImageStyle = () => "w-full max-w-[1376px] overflow-hidden md:h-[900px]"
+    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6"
+    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full"
+    const getFullRowStyle = () => "w-full max-w-[1376px]"
 
     const gallery = (
           <section className={getGallerySectionStyle()}>
@@ -92,5 +92,5 @@ export default function BerlinSonar() {
         />
       }
     />
-  );
+  )
 }

@@ -1,22 +1,20 @@
 "use client"
 
-import { ImageFrame } from "../../../components/Gallery";
-import ProjectDetails from "../../../components/ProjectDetails";
-import ProjectFooter from "../../../components/ProjectFooter";
+import { ImageFrame } from "../../../components/Gallery"
+import ProjectDetails from "../../../components/ProjectDetails"
+import ProjectFooter from "../../../components/ProjectFooter"
 
 export default function Cosmopolis() {
-    // Style functions for layout
-    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6";
-    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full";
-    
-    // Row styles
-    const getFirstRowStyle = () => "flex flex-col md:flex-row items-center justify-center gap-[30px] w-full max-w-[1374px] h-[880px]";
-    const getFullRowStyle = () => "w-full max-w-[1376px] h-[880px]";
 
-    // Frame styles based on layout specifications
-    const getSmallFrameStyle = () => "w-[440px] h-[880px] overflow-hidden";
-    const getLargeFrameStyle = () => "w-[903px] h-[880px] overflow-hidden";
-    const getFullFrameStyle = () => "w-full max-w-[1376px] h-[880px] overflow-hidden";
+  const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6"
+    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full"
+    
+    const getFirstRowStyle = () => "flex flex-col md:flex-row items-center justify-center gap-[30px] w-full max-w-[1374px] h-[880px]"
+    const getFullRowStyle = () => "w-full max-w-[1376px] h-[880px]"
+
+    const getSmallFrameStyle = () => "w-[440px] h-[880px] overflow-hidden"
+    const getLargeFrameStyle = () => "w-[903px] h-[880px] overflow-hidden"
+    const getFullFrameStyle = () => "w-full max-w-[1376px] h-[880px] overflow-hidden"
 
     const gallery = (
         <section className={getGallerySectionStyle()}>
@@ -106,7 +104,7 @@ export default function Cosmopolis() {
                 </div>
             </div>
         </section>
-    );
+    )
 
     return (
         <ProjectDetails
@@ -129,5 +127,5 @@ export default function Cosmopolis() {
                 />
             }
         />
-    );
+    )
 }

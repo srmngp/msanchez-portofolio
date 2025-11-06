@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export function ImageFrame({ 
     src, 
@@ -19,5 +19,5 @@ export function ImageFrame({
                 />
             )}
         </div>
-    );
+    )
 }

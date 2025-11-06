@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
 
@@ -36,7 +36,7 @@ export default function Home() {
         subtitle="Embroidery and textile art." />
 
     </div>
-  );
+  )
 
 }
 
@@ -62,5 +62,6 @@ export function ArtProductionProject({ href, image, title, subtitle }) {
       </Link>
 
     </div>
-  );
+  )
+
 } 

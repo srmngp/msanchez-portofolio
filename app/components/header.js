@@ -1,13 +1,13 @@
 'use client'
 
 import Link from "next/link"
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"
 
 function isSelectedStyle(pathname, targetPath) {
     if (targetPath === "/") {
-        return pathname === "/" || pathname.startsWith("/design-projects") ? "text-green-500" : "";
+        return pathname === "/" || pathname.startsWith("/design-projects") ? "text-green-500" : ""
     }
-    return pathname.startsWith(targetPath) ? "text-green-500" : "";
+    return pathname.startsWith(targetPath) ? "text-green-500" : ""
 }
 
 export default function Header() {
@@ -42,5 +42,5 @@ export default function Header() {
                 </ul>
             </nav>
         </header>
-    );
+    )
 }

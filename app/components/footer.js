@@ -1,38 +1,35 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
-import { designProjectRoutes } from "../data/designProjects";
+import React, { useEffect } from "react"
+import Image from "next/image"
+import { usePathname, useRouter } from "next/navigation"
+import { designProjectRoutes } from "../data/designProjects"
 
 export default function Footer() {
-    const pathname = usePathname();
-    const router = useRouter();
+    const pathname = usePathname()
+    const router = useRouter()
 
-    // dynamic project routes list
     const projectRoutes = designProjectRoutes;
 
-    const currentIndex = projectRoutes.findIndex((p) => pathname?.startsWith(p));
+    const currentIndex = projectRoutes.findIndex((p) => pathname?.startsWith(p))
 
     function goToIndex(i) {
-        if (i >= 0 && i < projectRoutes.length) router.push(projectRoutes[i]);
+        if (i >= 0 && i < projectRoutes.length) router.push(projectRoutes[i])
     }
 
     function handlePrev() {
-        if (projectRoutes.length === 0) return;
+        if (projectRoutes.length === 0) return
         if (currentIndex === -1) {
-            // if we're not on a project page, go to the last one
-            goToIndex(projectRoutes.length - 1);
-            return;
+            goToIndex(projectRoutes.length - 1)
+            return
         }
         const prev = (currentIndex - 1 + projectRoutes.length) % projectRoutes.length;
         goToIndex(prev);
     }
 
     function handleNext() {
-        if (projectRoutes.length === 0) return;
+        if (projectRoutes.length === 0) return
         if (currentIndex === -1) {
-            // if we're not on a project page, go to the first one
             goToIndex(0);
             return;
         }
@@ -40,17 +37,16 @@ export default function Footer() {
         goToIndex(next);
     }
 
-    // keyboard support: left/right arrows
-    // Only register the handler when we're NOT on the home page so arrows don't act on '/'
+
     useEffect(() => {
-        if (pathname === "/") return;
+        if (pathname === "/") return
 
         function onKey(e) {
-            if (e.key === "ArrowLeft") handlePrev();
-            if (e.key === "ArrowRight") handleNext();
+            if (e.key === "ArrowLeft") handlePrev()
+            if (e.key === "ArrowRight") handleNext()
         }
-        window.addEventListener("keydown", onKey);
-        return () => window.removeEventListener("keydown", onKey);
+        window.addEventListener("keydown", onKey)
+        return () => window.removeEventListener("keydown", onKey)
         // We intentionally don't include handlePrev/handleNext in deps to avoid re-registering too often
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname]);

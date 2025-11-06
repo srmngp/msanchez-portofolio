@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ProjectDetails({ image, title, description, gallery, galleryComponent, footer }) {
+export default function ProjectDetails({ image, title, description, galleryComponent, footer }) {
   return (
     <main>
 
@@ -19,7 +19,7 @@ export default function ProjectDetails({ image, title, description, gallery, gal
 
       <hr className="border-gray-600" />
 
-      <div className="text-lg text-gray-700 text-left p-6">
+      <div className="text-lg text-left p-6">
         {description.map((para, idx) => (
           <p key={idx} className="mb-4">
             {para}
@@ -29,14 +29,12 @@ export default function ProjectDetails({ image, title, description, gallery, gal
 
       <hr className="border-gray-600" />
 
-      {/* Optional gallery: either a custom galleryComponent (JSX) or a simple array of images rendered in flow */}
       {galleryComponent && (galleryComponent)}
 
       <hr className="border-gray-600" />
 
-
       {footer && (footer)}
 
     </main>
-  );
+  )
 }

@@ -1,8 +1,8 @@
 
-import "../globals.css";
+import "../globals.css"
 
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 export default function LightLayout({ children }) {
 
@@ -16,5 +16,5 @@ export default function LightLayout({ children }) {
         <Footer />
       </div>
     </div>
-  );
+  )
 }

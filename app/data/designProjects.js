@@ -3,7 +3,7 @@ export const designProjectRoutes = [
   "/design-projects/xbit",
   "/design-projects/berlin-sonar",
   "/design-projects/cosmopolis",
-  "/design-projects/internship",
+  "/design-projects/heart-of-gold",
 ];
 
-export default designProjectRoutes;
+export default designProjectRoutes

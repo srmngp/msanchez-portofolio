@@ -1,6 +1,5 @@
-import Hero from "../components/hero";
-import Showcase from "../components/showcase";
-
+import Hero from "../components/hero"
+import Showcase from "./showcase"
 
 export default function Home() {
   return (
@@ -8,5 +7,5 @@ export default function Home() {
       <Hero />
       <Showcase />
     </>
-  );
+  )
 }

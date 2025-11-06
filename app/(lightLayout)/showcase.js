@@ -60,11 +60,9 @@ export default function Showcase() {
                 title="Berlin Sonar"
                 description={
                     <>
-                        <p>Proyecto Final;</p>
-                        <p>Master in</p>
-                        <p>Web Desing and App UX/UI</p>
-                        <p>Barcelona School of Art</p>
-                        <p>(LABASAD)</p>
+                        <p>Research</p>
+                        <p>UX/UI Design</p>
+                        <p>Figma</p>
                     </>
                 }
             />
@@ -74,18 +72,26 @@ export default function Showcase() {
                 href="design-projects/cosmopolis"
                 images={<ProjectImage src="/design-projects/cosmopolis/portada_cosmopolis.jpg" alt="Cosmopolis" />}
                 title={"Cosmopolis"}
-                description={<p className="text-sm text-gray-600">Description</p>}
+                description={
+                    <>
+                        <p>Research</p>
+                        <p>UX/UI Design</p>
+                        <p>Figma</p>
+                    </>
+                }
             />
 
-            {/* Internship */}
+            {/* Heart of Gold */}
             <Project
-                href="design-projects/internship"
-                images={<ProjectImage src="/design-projects/internship.png" alt="Internship" />}
-                title="Internship"
+                href="design-projects/heart-of-gold"
+                images={<ProjectImage src="/design-projects/heart-of-gold/portada_hog.png" alt="Heart of Gold" />}
+                title="Heart of Gold"
                 description={
-                    <p className="text-sm text-gray-600">
-                        A collection of thoughts and designs that explore the boundaries of creativity and self-expression.
-                    </p>
+                    <>
+                        <p>Research</p>
+                        <p>UX/UI Design</p>
+                        <p>Figma</p>
+                    </>
                 }
             />
 

@@ -1,8 +1,8 @@
 
-import "../globals.css";
+import "../globals.css"
 
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Footer from "../components/footer"
+import Header from "../components/header"
 
 export default function DarkLayout({ children }) {
 
@@ -18,5 +18,5 @@ export default function DarkLayout({ children }) {
         
       </div>
     </div>
-  );
+  )
 }
