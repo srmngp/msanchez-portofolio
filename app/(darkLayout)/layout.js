@@ -1,8 +1,8 @@
 
 import "../globals.css";
 
-import Footer from "../footer";
-import Header from "../header";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function DarkLayout({ children }) {
 

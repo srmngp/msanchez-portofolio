@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { designProjectRoutes } from "./data/designProjects";
+import { designProjectRoutes } from "../data/designProjects";
 
 export default function Footer() {
     const pathname = usePathname();

@@ -1,5 +1,5 @@
-import Hero from "../hero";
-import Showcase from "../showcase";
+import Hero from "../components/hero";
+import Showcase from "../components/showcase";
 
 
 export default function Home() {
