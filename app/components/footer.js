@@ -55,7 +55,7 @@ export default function Footer() {
         <footer>
             <hr className="my-6" />
             <div className="container py-10">
-                {/* top row: two columns on small screens, four-aligned layout on md+ where middle two share remaining space */}
+
                 <div className="w-full grid grid-cols-2 gap-6 items-center md:flex md:items-center md:gap-6">
                     <div className="text-center md:text-left md:flex-none">
                         <span className="text-sm">ms.maria.sanchez.molina@gmail.com</span>
@@ -74,7 +74,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* bottom row: full width, left-aligned first item, centered copyright, right-aligned last item */}
                 <div className="w-full pt-8 flex items-center justify-between">
                     <div className="flex items-center">
                         {pathname !== "/" && (
@@ -82,7 +81,7 @@ export default function Footer() {
                                 aria-label="Previous design project"
                                 onClick={handlePrev}
                                 title="Previous"
-                                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                                className="p-2 cursor-pointer"
                             >
                                 <Image src="/assets/left.png" alt="Previous" width={24} height={24} />
                             </button>
@@ -99,7 +98,7 @@ export default function Footer() {
                                 aria-label="Next design project"
                                 onClick={handleNext}
                                 title="Next"
-                                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                                className="p-2 cursor-pointer"
                             >
                                 <Image src="/assets/right.png" alt="Next" width={24} height={24} />
                             </button>
