@@ -1,7 +1,7 @@
 "use client"
 
-import ProjectDetails from "../ProjectDetails";
-import ProjectFooter from "../ProjectFooter";
+import ProjectDetails from "../../../components/ProjectDetails";
+import ProjectFooter from "../../../components/ProjectFooter";
 
 export default function Cosmopolis() {
   return (

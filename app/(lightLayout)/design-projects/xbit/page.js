@@ -1,7 +1,7 @@
 "use client"
 
-import ProjectDetails from "../ProjectDetails";
-import ProjectFooter from "../ProjectFooter";
+import ProjectDetails from "../../../components/ProjectDetails";
+import ProjectFooter from "../../../components/ProjectFooter";
 import { ImageFrame, layoutStyles } from "../../../components/Gallery";
 
 export default function Xbit() {
@@ -9,7 +9,7 @@ export default function Xbit() {
     const gallery = (
         <section className={layoutStyles.section}>
             <div className={layoutStyles.container}>
-                {/* Row 1 */}
+                
                 <div className={layoutStyles.row}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen1_xbit.jpg" 
@@ -23,7 +23,6 @@ export default function Xbit() {
                     />
                 </div>
                 
-                {/* Row 2 */}
                 <div className={layoutStyles.row}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen3_xbit.jpg" 
@@ -37,7 +36,6 @@ export default function Xbit() {
                     />
                 </div>
 
-                {/* Row 3 */}
                 <div className={layoutStyles.fullRow}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen5_xbit.jpg" 
@@ -46,7 +44,6 @@ export default function Xbit() {
                     />
                 </div>
 
-                {/* Row 4 */}
                 <div className={layoutStyles.row}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen6_xbit.jpg" 
@@ -60,7 +57,6 @@ export default function Xbit() {
                     />
                 </div>
 
-                {/* Row 5 */}
                 <div className={layoutStyles.row}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen8_xbit.jpg" 
@@ -74,7 +70,6 @@ export default function Xbit() {
                     />
                 </div>
 
-                {/* Row 6 */}
                 <div className={layoutStyles.row}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen10_xbit.jpg" 

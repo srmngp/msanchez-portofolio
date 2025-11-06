@@ -1,5 +1,5 @@
 import React from 'react'
-import ArtProductionDetails from '../ArtProductionDetails'
+import ArtProductionDetails from '../../../components/ArtProductionDetails'
 import Image from 'next/image'
 
 export default function ALaVera() {
