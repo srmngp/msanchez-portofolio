@@ -72,7 +72,7 @@ export default function Showcase() {
             {/* Cosmopolis */}
             <Project
                 href="design-projects/cosmopolis"
-                images={<ProjectImage src="/design-projects/cosmopolis.png" alt="Cosmopolis" />}
+                images={<ProjectImage src="/design-projects/cosmopolis/portada_cosmopolis.jpg" alt="Cosmopolis" />}
                 title={"Cosmopolis"}
                 description={<p className="text-sm text-gray-600">Description</p>}
             />

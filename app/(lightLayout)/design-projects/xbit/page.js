@@ -2,84 +2,95 @@
 
 import ProjectDetails from "../../../components/ProjectDetails";
 import ProjectFooter from "../../../components/ProjectFooter";
-import { ImageFrame, layoutStyles } from "../../../components/Gallery";
+import { ImageFrame } from "../../../components/Gallery";
 
 export default function Xbit() {
+    
+    const getHalfFrameStyle = () => "w-full md:w-1/2 overflow-hidden md:h-[908px]";
+    const getHalfAutoFrameStyle = () => "w-full md:w-1/2 overflow-hidden";
+    const getFullFrameStyle = () => "w-full max-w-[1376px] overflow-hidden md:h-[800px]";
+
+    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6";
+    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full";
+    const getRowStyle = () => "flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1374px]";
+    const getFullRowStyle = () => "w-full max-w-[1376px]";
 
     const gallery = (
-        <section className={layoutStyles.section}>
-            <div className={layoutStyles.container}>
+        <section className={getGallerySectionStyle()}>
+            <div className={getGalleryContainerStyle()}>
                 
-                <div className={layoutStyles.row}>
+                <div className={getRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen1_xbit.jpg" 
                         alt="xbit-1" 
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                     <ImageFrame 
                         src="/design-projects/xbit/imagen2_xbit.jpg" 
                         alt="xbit-2"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                 </div>
                 
-                <div className={layoutStyles.row}>
+                <div className={getRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen3_xbit.jpg" 
                         alt="xbit-3"
-                        variant="halfAuto"
+                        className={getHalfAutoFrameStyle()}
                     />
                     <ImageFrame 
                         src="/design-projects/xbit/imagen4_xbit.jpg" 
                         alt="xbit-4"
-                        variant="halfAuto"
+                        className={getHalfAutoFrameStyle()}
                     />
                 </div>
 
-                <div className={layoutStyles.fullRow}>
+                <div className={getFullRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen5_xbit.jpg" 
                         alt="xbit-5"
-                        variant="full"
+                        width={1376}
+                        height={800}
+                        className={getFullFrameStyle()}
                     />
                 </div>
 
-                <div className={layoutStyles.row}>
+                <div className={getRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen6_xbit.jpg" 
                         alt="xbit-6"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                     <ImageFrame 
                         src="/design-projects/xbit/imagen7_xbit.jpg" 
                         alt="xbit-7"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                 </div>
 
-                <div className={layoutStyles.row}>
+                <div className={getRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen8_xbit.jpg" 
                         alt="xbit-8"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                     <ImageFrame 
                         src="/design-projects/xbit/imagen9_xbit.jpg" 
                         alt="xbit-9"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                 </div>
 
-                <div className={layoutStyles.row}>
+                <div className={getRowStyle()}>
                     <ImageFrame 
                         src="/design-projects/xbit/imagen10_xbit.jpg" 
                         alt="xbit-10"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                     <ImageFrame 
                         src="/design-projects/xbit/imagen11_xbit.jpg" 
                         alt="xbit-11"
-                        variant="half"
+                        className={getHalfFrameStyle()}
                     />
                 </div>
             </div>
