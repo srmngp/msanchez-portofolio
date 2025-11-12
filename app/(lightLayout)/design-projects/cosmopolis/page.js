@@ -40,7 +40,7 @@ export default function Cosmopolis() {
                 {/* Row 2: Full width image */}
                 <div className={getFullRowStyle()}>
                     <ImageFrame 
-                        src="/design-projects/cosmopolis/imagen3.jpg"
+                        src="/design-projects/cosmopolis/imagen3_cosmopolis.jpg"
                         alt="cosmopolis-3"
                         width={1376}
                         height={880}
@@ -119,7 +119,6 @@ export default function Cosmopolis() {
             footer={
                 <ProjectFooter
                     sections={{
-                        "Agency": ["unexisten"],
                         "Creative director": ["Maria Sanchez"],
                         "Designer": ["Maria Sanchez"],
                         "Location": ["Berlin, Germany", "Barcelona, Spain"]
