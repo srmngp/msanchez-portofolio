@@ -1,5 +1,3 @@
-"use client"
-
 import { ImageFrame } from "../../../components/Gallery"
 import ProjectDetails from "../../../components/ProjectDetails"
 import ProjectFooter from "../../../components/ProjectFooter"

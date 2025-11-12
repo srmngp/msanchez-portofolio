@@ -95,6 +95,19 @@ export default function Showcase() {
                 }
             />
 
+            {/* The Time is Now */}
+            <Project
+                href="design-projects/the-time-is-now"
+                images={<ProjectImage src="/design-projects/the-time-is-now/portada_ttin.jpg" alt="The Time is Now" />}
+                title="The Time is Now"
+                description={
+                    <>
+                        <p>Illustration</p>
+                        <p>Animation</p>
+                        <p>Adobe Creative Suite </p>
+                    </>
+                }
+            />
 
         </section>
     )

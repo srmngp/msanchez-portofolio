@@ -1,5 +1,3 @@
-"use client"
-
 import { ImageFrame } from "../../../components/Gallery";
 import ProjectDetails from "../../../components/ProjectDetails";
 import ProjectFooter from "../../../components/ProjectFooter";
@@ -101,9 +99,8 @@ export default function HeartOfGold() {
       footer={
         <ProjectFooter
           sections={{
-            "Agency": ["Contenedor Cultural"],
-            "Creative director": ["Agustin Linares"],
-            "Designer": ["Maria Sanchez", "Lola Palacios", "Una mas"],
+            "Agency": ["Heart of Gold Hostel"],
+            "Designer": ["Maria Sanchez"],
             "Location": ["Berlin, Germany"]
           }}
         />
