@@ -109,6 +109,21 @@ export default function Showcase() {
                 }
             />
 
+            {/* Contenedor cultural */}
+            <Project
+                href="design-projects/contenedor-cultural"
+                images={<ProjectImage src="/design-projects/contenedor-cultural/portada_uma.jpg" alt="Contenedor Cultural" />}
+                title="Contenedor Cultural"
+                description={
+                    <>
+                        <p>Editorial design</p>
+                        <p>Adobe Creative Suite</p>
+                        <p>Advertising campaigns</p>
+                        <p>Event promotion</p>
+                    </>
+                }
+            />
+
         </section>
     )
 }

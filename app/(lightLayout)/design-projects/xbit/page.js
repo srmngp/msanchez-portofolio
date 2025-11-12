@@ -1,17 +1,17 @@
-import ProjectDetails from "../../../components/ProjectDetails";
-import ProjectFooter from "../../../components/ProjectFooter";
-import { ImageFrame } from "../../../components/Gallery";
+import ProjectDetails from "../../../components/ProjectDetails"
+import ProjectFooter from "../../../components/ProjectFooter"
+import { ImageFrame } from "../../../components/Gallery"
 
 export default function Xbit() {
     
-    const getHalfFrameStyle = () => "w-full md:w-1/2 overflow-hidden md:h-[908px]";
-    const getHalfAutoFrameStyle = () => "w-full md:w-1/2 overflow-hidden";
-    const getFullFrameStyle = () => "w-full max-w-[1376px] overflow-hidden md:h-[800px]";
+    const getHalfFrameStyle = () => "w-full md:w-1/2 overflow-hidden md:h-[908px]"
+    const getHalfAutoFrameStyle = () => "w-full md:w-1/2 overflow-hidden"
+    const getFullFrameStyle = () => "w-full max-w-[1376px] overflow-hidden md:h-[800px]"
 
-    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6";
-    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full";
-    const getRowStyle = () => "flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1374px]";
-    const getFullRowStyle = () => "w-full max-w-[1376px]";
+    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6"
+    const getGalleryContainerStyle = () => "flex flex-col items-center gap-10 w-full"
+    const getRowStyle = () => "flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-[1374px]"
+    const getFullRowStyle = () => "w-full max-w-[1376px]"
 
     const gallery = (
         <section className={getGallerySectionStyle()}>

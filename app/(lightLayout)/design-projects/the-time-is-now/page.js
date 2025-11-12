@@ -1,18 +1,18 @@
-import { ImageFrame } from "../../../components/Gallery";
-import ProjectDetails from "../../../components/ProjectDetails";
-import ProjectFooter from "../../../components/ProjectFooter";
+import { ImageFrame } from "../../../components/Gallery"
+import ProjectDetails from "../../../components/ProjectDetails"
+import ProjectFooter from "../../../components/ProjectFooter"
 
 export default function TheTimeIsNow() {
 
-    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6";
-    const getGalleryContainerStyle = () => "flex flex-col items-center gap-[40px] w-full";
+    const getGallerySectionStyle = () => "flex flex-col items-center gap-10 py-6"
+    const getGalleryContainerStyle = () => "flex flex-col items-center gap-[40px] w-full"
 
-    const getSplitRowStyle = (height) => `flex flex-col md:flex-row items-center justify-center gap-[30px] w-full max-w-[1374px] h-[${height}px]`;
-    const getFullRowStyle = () => "w-full max-w-[1376px]";
+    const getSplitRowStyle = (height) => `flex flex-col md:flex-row items-center justify-center gap-[30px] w-full max-w-[1374px] h-[${height}px]`
+    const getFullRowStyle = () => "w-full max-w-[1376px]"
 
-    const getFullFrameStyle = (height) => `w-full max-w-[1376px] overflow-hidden h-[${height}px]`;
-    const getLeftFrameStyle = (w, h) => `w-[${w}px] h-[${h}px] overflow-hidden`;
-    const getRightFrameStyle = (w, h) => `w-[${w}px] h-[${h}px] overflow-hidden`;
+    const getFullFrameStyle = (height) => `w-full max-w-[1376px] overflow-hidden h-[${height}px]`
+    const getLeftFrameStyle = (w, h) => `w-[${w}px] h-[${h}px] overflow-hidden`
+    const getRightFrameStyle = (w, h) => `w-[${w}px] h-[${h}px] overflow-hidden`
 
     const gallery = (
         <section className={getGallerySectionStyle()}>
