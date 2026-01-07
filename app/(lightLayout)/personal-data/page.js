@@ -136,7 +136,7 @@ export default function PersonalData() {
               priority
             />
           </div>
-          <div className="w-full md:w-1/2 aspect-[678/778] relative overflow-hidden">
+          <div className="w-full md:w-1/2 aspect-[683/778] relative overflow-hidden">
             <Image
               src="/bio/segunda_bio.jpg"
               alt="Maria Sanchez - Bio Image 2"
