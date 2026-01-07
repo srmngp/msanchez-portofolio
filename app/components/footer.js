@@ -58,7 +58,12 @@ export default function Footer() {
 
                 <div className="w-full grid grid-cols-2 gap-6 items-center md:flex md:items-center md:gap-6">
                     <div className="text-center md:text-left md:flex-none">
-                        <span className="text-sm">ms.maria.sanchez.molina@gmail.com</span>
+                        <a
+                            href="mailto:ms.maria.sanchez.molina@gmail.com"
+                            className="text-sm hover:text-green-500 transition-colors"
+                        >
+                            ms.maria.sanchez.molina@gmail.com
+                        </a>
                     </div>
 
                     <div className="text-center md:flex-1 md:min-w-0">
@@ -66,7 +71,14 @@ export default function Footer() {
                     </div>
 
                     <div className="text-center md:flex-1 md:min-w-0">
-                        <span className="text-sm">LinkedIn Profile</span>
+                        <a
+                            href="https://www.linkedin.com/in/msanchezmolina"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm hover:text-green-500 transition-colors"
+                        >
+                            LinkedIn Profile
+                        </a>
                     </div>
 
                     <div className="text-center md:text-right md:flex-none">
