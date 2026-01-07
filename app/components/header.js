@@ -11,18 +11,19 @@ function isSelectedStyle(pathname, targetPath) {
 }
 
 export default function Header() {
-      const pathname = usePathname()
+    const pathname = usePathname()
 
     return (
-        <header className="w-full mb-6">
-            <nav className="px-6 py-4 border-b dark:background-gray-900">
-                <ul className="flex justify-between text-xl">
+        <header className="w-full mb-4 sm:mb-6">
+            <nav className="px-4 py-3 sm:px-6 sm:py-4 border-b dark:background-gray-900">
+                {/* Desktop layout */}
+                <ul className="hidden md:flex justify-between text-xl">
                     <li>
                         <Link href="/resume" className={`hover:text-green-500 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
                             Resume
                         </Link>
                     </li>
-                    <div className="flex space-x-20">
+                    <div className="flex space-x-20 ml-5">
                         <li>
                             <Link href="/" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/")}`}>
                                 Design Projects
@@ -40,6 +41,32 @@ export default function Header() {
                         </li>
                     </div>
                 </ul>
+
+                {/* Mobile layout */}
+                <div className="md:hidden flex flex-col gap-3">
+                    <ul className="flex flex-col gap-2 text-sm">
+                        <li>
+                            <Link href="/resume" className={`text-base hover:text-green-500 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
+                                Resume
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/")}`}>
+                                Design Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/art-production" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/art-production")}`}>
+                                Art Production
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/personal-data" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/personal-data")}`}>
+                                Personal Data
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
     )
