@@ -54,7 +54,7 @@ export default function Footer() {
     return (
         <footer>
             <hr className="my-6" />
-            <div className="container py-10">
+            <div className="py-10">
 
                 <div className="w-full grid grid-cols-2 gap-6 items-center md:flex md:items-center md:gap-6">
                     <div className="text-center md:text-left md:flex-none">
