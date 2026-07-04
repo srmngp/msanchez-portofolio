@@ -56,7 +56,7 @@ export default function Showcase() {
             {/* Berlin sonar*/}
             <Project
                 href="design-projects/berlin-sonar"
-                images={<ProjectImage src="/design-projects/sonar-berlin/portada_sonar.jpg" alt="Berlin Sonar" />}
+                images={<ProjectImage src="/design-projects/sonar-berlin/portada_sonar.webp" alt="Berlin Sonar" />}
                 title="Berlin Sonar"
                 description={
                     <>

@@ -38,7 +38,7 @@ export default function BerlinSonar() {
 
   return (
     <ProjectDetails
-      image="/design-projects/sonar-berlin/portada_sonar.jpg"
+      image="/design-projects/sonar-berlin/portada_sonar.webp"
       title="Sonar Berlin"
       description={[
         "Final Master’s project in UX/UI Design developed for Sonar Festival Berlin, a nonprofit organization.",
