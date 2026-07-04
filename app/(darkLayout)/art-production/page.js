@@ -40,14 +40,15 @@ export function ArtProductionProject({ href, image, title, subtitle }) {
 
       <Link href={href} className="block transition">
 
-        <Image
-          src={image}
-          alt={title}
-          width={600}
-          height={400}
-          className="object-cover w-full"
-          priority
-        />
+        <div className="relative w-full aspect-[3/2] overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
         <p className="mt-4 font-semibold mb-1">{title}</p>
 
