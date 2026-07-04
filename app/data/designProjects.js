@@ -4,8 +4,9 @@ export const designProjectRoutes = [
   "/design-projects/berlin-sonar",
   "/design-projects/cosmopolis",
   "/design-projects/car-on-sale",
-  "/design-projects/heart-of-gold",
+  "/design-projects/sunflower-hostel",
   "/design-projects/the-time-is-now",
+  "/design-projects/heart-of-gold",
   "/design-projects/contenedor-cultural",
 ];
 

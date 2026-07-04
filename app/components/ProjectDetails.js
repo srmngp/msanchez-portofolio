@@ -1,18 +1,30 @@
 import Image from "next/image";
 
-export default function ProjectDetails({ image, title, description, galleryComponent, footer }) {
+export default function ProjectDetails({ image, title, description, galleryComponent, footer, imageAspectRatio }) {
   return (
     <main>
 
       <div className="flex justify-center mb-8 p-6">
-        <Image
-          src={image}
-          alt={title}
-          width={800}
-          height={500}
-          className="object-cover w-full h-auto"
-          priority
-        />
+        {imageAspectRatio ? (
+          <div className="relative w-full overflow-hidden" style={{ aspectRatio: imageAspectRatio }}>
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        ) : (
+          <Image
+            src={image}
+            alt={title}
+            width={800}
+            height={500}
+            className="object-cover w-full h-auto"
+            priority
+          />
+        )}
       </div>
 
       <h2 className="text-4xl font-bold mb-2 pl-6">{title}</h2>

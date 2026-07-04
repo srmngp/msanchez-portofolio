@@ -95,16 +95,16 @@ export default function Showcase() {
                 }
             />
 
-            {/* Heart of Gold */}
+            {/* Sunflower Hostel */}
             <Project
-                href="design-projects/heart-of-gold"
-                images={<ProjectImage src="/design-projects/heart-of-gold/portada_hog.png" alt="Heart of Gold" />}
-                title="Heart of Gold"
+                href="design-projects/sunflower-hostel"
+                images={<ProjectImage src="/design-projects/sunflower-hostel/portada_sunflower.webp" alt="Sunflower Hostel" />}
+                title="Sunflower Hostel"
                 description={
                     <>
-                        <p>Research</p>
-                        <p>UX/UI Design</p>
-                        <p>Figma</p>
+                        <p>Social Media</p>
+                        <p>Video Production</p>
+                        <p>Visual Storytelling</p>
                     </>
                 }
             />
@@ -119,6 +119,20 @@ export default function Showcase() {
                         <p>Illustration</p>
                         <p>Animation</p>
                         <p>Adobe Creative Suite </p>
+                    </>
+                }
+            />
+
+            {/* Heart of Gold */}
+            <Project
+                href="design-projects/heart-of-gold"
+                images={<ProjectImage src="/design-projects/heart-of-gold/portada_hog.png" alt="Heart of Gold" />}
+                title="Heart of Gold"
+                description={
+                    <>
+                        <p>Research</p>
+                        <p>UX/UI Design</p>
+                        <p>Figma</p>
                     </>
                 }
             />
