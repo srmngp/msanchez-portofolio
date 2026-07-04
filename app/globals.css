@@ -37,7 +37,7 @@ h2 {
 
 @font-face {
   font-family: "Chromate-Regular";
-  src: url("/fonts/Chromate-Regular.otf") format("truetype");
+  src: url("/fonts/Chromate-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
