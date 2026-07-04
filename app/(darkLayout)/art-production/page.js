@@ -24,8 +24,8 @@ export default function Home() {
         subtitle="Video and digital drawing" />
 
       <ArtProductionProject
-        href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
+        href="/art-production/duelo"
+        image={"/art-production/duelo/portada_duelo.webp"}
         title="Duelo"
         subtitle="Performance and site-specific intervention" />
 
