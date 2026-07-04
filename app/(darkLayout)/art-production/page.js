@@ -30,8 +30,8 @@ export default function Home() {
         subtitle="Performance and site-specific intervention" />
 
       <ArtProductionProject
-        href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
+        href="/art-production/ofrenda"
+        image={"/art-production/ofrenda/portada_ofrenda.webp"}
         title="Ofrenda"
         subtitle="Embroidery and textile art." />
 
