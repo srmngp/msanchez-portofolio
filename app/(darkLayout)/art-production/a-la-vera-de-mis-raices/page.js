@@ -1,57 +1,51 @@
-import React from 'react'
-import ArtProductionDetails from '../../../components/ArtProductionDetails'
-import Image from 'next/image'
+"use client";
+
+import ProjectDetails from "../../../components/ProjectDetails";
+import Gallery from "../../../components/Gallery";
 
 export default function ALaVera() {
-    const carrouselImages = <>
-        <Image
-            key={1}
-            src={"/art-production/a-la-vera/Rectangle-1.png"}
-            alt={"A la vera de mis raíces - 1"}
-            width={800}
-            height={600}
-            className='w-full h-auto object-cover' />
-        <Image
-            key={2}
-            src={"/art-production/a-la-vera/Rectangle-2.png"}
-            alt={"A la vera de mis raíces - 2"}
-            width={300}
-            height={200}
-            className='w-full h-auto object-cover' />
-        <Image
-            key={3}
-            src={"/art-production/a-la-vera/Rectangle-3.png"}
-            alt={"A la vera de mis raíces - 3"}
-            width={300}
-            height={200}
-            className='w-full h-auto object-cover' />
-        <Image
-            key={4}
-            src={"/art-production/a-la-vera/Rectangle-4.png"}
-            alt={"A la vera de mis raíces - 4"}
-            width={300}
-            height={200}
-            className='w-full h-auto object-cover' />
-        <Image
-            key={5}
-            src={"/art-production/a-la-vera/Rectangle-5.png"}
-            alt={"A la vera de mis raíces - 5"}
-            width={300}
-            height={200}
-            className='w-full h-auto object-cover' />
-    </>
+  const images = [
+    {
+      src: "/art-production/a-la-vera/imagen1_raices.webp",
+      alt: "a-la-vera-de-mis-raices-1",
+      aspectRatio: "1280/1280",
+    },
+    {
+      src: "/art-production/a-la-vera/imagen2_raices.webp",
+      alt: "a-la-vera-de-mis-raices-2",
+      aspectRatio: "1280/1280",
+    },
+    {
+      src: "/art-production/a-la-vera/imagen3_raices.webp",
+      alt: "a-la-vera-de-mis-raices-3",
+      aspectRatio: "1280/1280",
+    },
+    {
+      src: "/art-production/a-la-vera/imagen4_raices.webp",
+      alt: "a-la-vera-de-mis-raices-4",
+      aspectRatio: "1280/1280",
+    },
+    {
+      src: "/art-production/a-la-vera/imagen5_raices.webp",
+      alt: "a-la-vera-de-mis-raices-5",
+      aspectRatio: "1280/1280",
+    },
+    {
+      src: "/art-production/a-la-vera/imagen6_raices.webp",
+      alt: "a-la-vera-de-mis-raices-6",
+      aspectRatio: "1280/1280",
+    },
+  ];
 
-    return (
-        <>
-            <ArtProductionDetails
-                image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
-                title="A la vera de mis raíces"
-                description={"A textile project that reconnects with cultural traditions through crochet. By combining ancestral craft with contemporary composition, the work positions landscape as both backdrop and protagonist, symbolizing the longing for origin and belonging."}
-                carrouselImages={carrouselImages}
-                artistName="María Sánchez"
-                year="2021"
-                location="Málaga, Spain"
-            />
-        </>
-    )
+  return (
+    <ProjectDetails
+      image="/art-production/a-la-vera/portada_raices.webp"
+      imageAspectRatio="1376/800"
+      title="A la vera de mis raíces"
+      description={[
+        "A textile project that reconnects with cultural traditions through crochet. By combining ancestral craft with contemporary composition, the work positions landscape as both backdrop and protagonist, symbolizing the longing for origin and belonging.",
+      ]}
+      galleryComponent={<Gallery images={images} gridCols={1} />}
+    />
+  );
 }

@@ -7,7 +7,7 @@ export default function Home() {
     <div className="grid grid-cols-2 gap-8 px-6">
       <ArtProductionProject
         href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
+        image={"/art-production/a-la-vera/portada_raices.webp"}
         title="A la vera de mis raíces"
         subtitle="Crochet and textile art" />
 
@@ -16,12 +16,6 @@ export default function Home() {
         image={"/art-production/el-cuerpo-ausente/portada_cuerpo-ausente.webp"}
         title="El Cuerpo Ausente"
         subtitle="Photography, digital manipulation, painting" />
-
-      <ArtProductionProject
-        href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
-        title="Memorium"
-        subtitle="Video and digital drawing" />
 
       <ArtProductionProject
         href="/art-production/duelo"
