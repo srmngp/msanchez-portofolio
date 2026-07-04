@@ -81,6 +81,20 @@ export default function Showcase() {
                 }
             />
 
+            {/* CarOnSale */}
+            <Project
+                href="design-projects/car-on-sale"
+                images={<ProjectImage src="/design-projects/car-on-sale/portada_caronsale.webp" alt="CarOnSale" />}
+                title="CarOnSale"
+                description={
+                    <>
+                        <p>Content Strategy</p>
+                        <p>Social Media</p>
+                        <p>Brand Design</p>
+                    </>
+                }
+            />
+
             {/* Heart of Gold */}
             <Project
                 href="design-projects/heart-of-gold"
