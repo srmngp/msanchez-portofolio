@@ -12,8 +12,8 @@ export default function Home() {
         subtitle="Crochet and textile art" />
 
       <ArtProductionProject
-        href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/a-la-vera-de-mis-raices.png"}
+        href="/art-production/el-cuerpo-ausente"
+        image={"/art-production/el-cuerpo-ausente/portada_cuerpo-ausente.webp"}
         title="El Cuerpo Ausente"
         subtitle="Photography, digital manipulation, painting" />
 

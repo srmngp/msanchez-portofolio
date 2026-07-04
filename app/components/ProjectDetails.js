@@ -43,9 +43,12 @@ export default function ProjectDetails({ image, title, description, galleryCompo
 
       {galleryComponent && (galleryComponent)}
 
-      <hr className="border-gray-600" />
-
-      {footer && (footer)}
+      {footer && (
+        <>
+          <hr className="border-gray-600" />
+          {footer}
+        </>
+      )}
 
     </main>
   )
