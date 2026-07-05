@@ -28,16 +28,16 @@ export default function Showcase() {
             <ProjectCard
                 href="design-projects/xbit"
                 src="/design-projects/xbit/portada_xbit.jpg"
-                alt="XBIT"
-                title="XBIT"
+                alt="X.BIT"
+                title="X.BIT"
                 priority
             />
 
             <ProjectCard
                 href="design-projects/berlin-sonar"
                 src="/design-projects/sonar-berlin/portada_sonar.webp"
-                alt="Berlin Sonar"
-                title="Berlin Sonar"
+                alt="Sonar Berlin"
+                title="Sonar Berlin"
                 priority
             />
 
@@ -65,15 +65,15 @@ export default function Showcase() {
             <ProjectCard
                 href="design-projects/the-time-is-now"
                 src="/design-projects/the-time-is-now/portada_ttin.jpg"
-                alt="The Time is Now"
-                title="The Time is Now"
+                alt="The time is now"
+                title="The time is now"
             />
 
             <ProjectCard
                 href="design-projects/heart-of-gold"
                 src="/design-projects/heart-of-gold/portada_hog.png"
-                alt="Heart of Gold"
-                title="Heart of Gold"
+                alt="Heart of Gold Hostel"
+                title="Heart of Gold Hostel"
             />
 
             <ProjectCard
