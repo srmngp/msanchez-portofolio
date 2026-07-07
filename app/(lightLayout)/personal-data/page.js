@@ -162,7 +162,7 @@ export default function PersonalData() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Bio</h2>
         <hr className="border-gray-600" />
         <div className="p-6">
-          <p className="text-base sm:text-lg md:text-[22px] leading-relaxed columns-1 md:columns-2 gap-6 sm:gap-8">
+          <p className="text-lg leading-relaxed columns-1 md:columns-2 gap-6 sm:gap-8">
             {"I'm a Spanish designer based in Berlin, with a foundation in Fine Arts that shapes how I approach every project, blending artistic sensibility with technical expertise."}
             <br /><br />
             {"Across my work I've built visual identities, designed digital products, produced content systems, and curated exhibitions, moving between traditional techniques and tools like Figma, Procreate, Magnific (Freepik), NanoBanana, and Higgsfield. That range lets me move across branding, editorial design, content creation, and user-centered digital experiences."}

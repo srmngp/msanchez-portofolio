@@ -1,7 +1,7 @@
 export default function ListSection({ items }) {
   return (
     <div className="p-6">
-      <div className="text-lg sm:text-xl md:text-[25px] leading-relaxed space-y-4">
+      <div className="text-lg leading-relaxed space-y-4">
         {items.map((item, idx) => (
           <div key={idx}>
             <strong>{item.title}</strong>
