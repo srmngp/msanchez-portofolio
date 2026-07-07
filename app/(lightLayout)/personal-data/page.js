@@ -5,8 +5,8 @@ import ListSection from "../../components/ListSection"
 export default function PersonalData() {
   const studiesData = [
     {
-      title: "Barcelona School of Art & Desing (LABASAD).",
-      lines: ["Barcelona, Spain.", "2022/2023. Online master in Web Desing and App: UX/UI"]
+      title: "Barcelona School of Art & Design (LABASAD).",
+      lines: ["Barcelona, Spain.", "2022/2023. Online master in Web Design and App: UX/UI"]
     },
     {
       title: "University of Malaga (UMA).",
@@ -25,7 +25,7 @@ export default function PersonalData() {
       lines: ["2020 Link by UMA."]
     },
     {
-      title: "Comercial Spaces Course: Visual Merchandise.",
+      title: "Commercial Spaces Course: Visual Merchandise.",
       lines: ["2019 Link by UMA & IKEA."]
     }
   ]
@@ -138,7 +138,7 @@ export default function PersonalData() {
   return (
     <>
       <Hero />
-      <main>
+      <div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 sm:gap-8 p-6 mb-8">
           <div className="w-full md:w-1/2 aspect-[683/778] relative overflow-hidden">
             <Image
@@ -185,7 +185,7 @@ export default function PersonalData() {
         <hr className="border-gray-600" />
         <ListSection items={exhibitionsData} />
 
-      </main>
+      </div>
     </>
   )
 }

@@ -5,31 +5,31 @@ import Gallery from "../../../components/Gallery";
 export default function BerlinSonar() {
   const images = [
     {
-      src: "/design-projects/sonar-berlin/imagen1_sonar.jpg",
+      src: "/design-projects/sonar-berlin/imagen1_sonar.webp",
       alt: "sonar-1",
       className: "md:col-span-2",
       aspectRatio: "1376/900",
     },
     {
-      src: "/design-projects/sonar-berlin/imagen2_sonar.jpg",
+      src: "/design-projects/sonar-berlin/imagen2_sonar.webp",
       alt: "sonar-2",
       className: "md:col-span-2",
       aspectRatio: "1376/900",
     },
     {
-      src: "/design-projects/sonar-berlin/imagen3_sonar.jpg",
+      src: "/design-projects/sonar-berlin/imagen3_sonar.webp",
       alt: "sonar-3",
       className: "md:col-span-2",
       aspectRatio: "1376/900",
     },
     {
-      src: "/design-projects/sonar-berlin/imagen4_sonar.jpg",
+      src: "/design-projects/sonar-berlin/imagen4_sonar.webp",
       alt: "sonar-4",
       className: "md:col-span-2",
       aspectRatio: "1376/900",
     },
     {
-      src: "/design-projects/sonar-berlin/contraportada_sonar.jpg",
+      src: "/design-projects/sonar-berlin/contraportada_sonar.webp",
       alt: "sonar-5",
       className: "md:col-span-2",
       aspectRatio: "1376/900",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectDetails({ image, title, description, galleryComponent, footer, imageAspectRatio }) {
   return (
-    <main>
+    <article>
 
       <div className="flex justify-center mb-8 p-6">
         {imageAspectRatio ? (
@@ -27,7 +27,7 @@ export default function ProjectDetails({ image, title, description, galleryCompo
         )}
       </div>
 
-      <h2 className="text-4xl font-bold mb-2 pl-6">{title}</h2>
+      <h1 className="text-4xl font-bold mb-2 pl-6">{title}</h1>
 
       <hr className="border-gray-600" />
 
@@ -50,6 +50,6 @@ export default function ProjectDetails({ image, title, description, galleryCompo
         </>
       )}
 
-    </main>
+    </article>
   )
 }

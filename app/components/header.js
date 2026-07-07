@@ -19,9 +19,9 @@ export default function Header() {
                 {/* Desktop layout */}
                 <ul className="hidden md:flex justify-between text-xl">
                     <li>
-                        <Link href="/resume" className={`hover:text-green-500 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
+                        <a href="/2026-07_Maria_Sanchez_Resume.pdf" download className="hover:text-green-500 transition-colors">
                             Resume
-                        </Link>
+                        </a>
                     </li>
                     <div className="flex space-x-20 ml-5">
                         <li>
@@ -46,9 +46,9 @@ export default function Header() {
                 <div className="md:hidden flex flex-col gap-3">
                     <ul className="flex flex-col gap-2 text-sm">
                         <li>
-                            <Link href="/resume" className={`text-base hover:text-green-500 transition-colors ${isSelectedStyle(pathname, "/resume")}`}>
+                            <a href="/2026-07_Maria_Sanchez_Resume.pdf" download className="text-base hover:text-green-500 transition-colors">
                                 Resume
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link href="/" className={`transition-colors hover:text-green-500 ${isSelectedStyle(pathname, "/")}`}>

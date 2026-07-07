@@ -27,7 +27,7 @@ export default function Showcase() {
 
             <ProjectCard
                 href="design-projects/xbit"
-                src="/design-projects/xbit/portada_xbit.jpg"
+                src="/design-projects/xbit/portada_xbit.webp"
                 alt="X.BIT"
                 title="X.BIT"
                 priority
@@ -43,7 +43,7 @@ export default function Showcase() {
 
             <ProjectCard
                 href="design-projects/cosmopolis"
-                src="/design-projects/cosmopolis/portada_cosmopolis.jpg"
+                src="/design-projects/cosmopolis/portada_cosmopolis.webp"
                 alt="Cosmopolis"
                 title="Cosmopolis"
             />
@@ -64,21 +64,21 @@ export default function Showcase() {
 
             <ProjectCard
                 href="design-projects/the-time-is-now"
-                src="/design-projects/the-time-is-now/portada_ttin.jpg"
+                src="/design-projects/the-time-is-now/portada_ttin.webp"
                 alt="The time is now"
                 title="The time is now"
             />
 
             <ProjectCard
                 href="design-projects/heart-of-gold"
-                src="/design-projects/heart-of-gold/portada_hog.png"
+                src="/design-projects/heart-of-gold/portada_hog.webp"
                 alt="Heart of Gold Hostel"
                 title="Heart of Gold Hostel"
             />
 
             <ProjectCard
                 href="design-projects/contenedor-cultural"
-                src="/design-projects/contenedor-cultural/portada_uma.jpg"
+                src="/design-projects/contenedor-cultural/portada_uma.webp"
                 alt="Contenedor Cultural"
                 title="Contenedor Cultural"
             />

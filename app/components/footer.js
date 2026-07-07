@@ -56,18 +56,25 @@ export default function Footer() {
             <hr className="my-6" />
             <div className="py-10">
 
-                <div className="w-full grid grid-cols-2 gap-6 items-center md:flex md:items-center md:gap-6">
+                <div className="w-full grid grid-cols-1 gap-3 text-center md:flex md:items-center md:gap-6">
                     <div className="text-center md:text-left md:flex-none">
                         <a
                             href="mailto:ms.maria.sanchez.molina@gmail.com"
-                            className="text-sm hover:text-green-500 transition-colors"
+                            className="text-sm hover:text-green-500 transition-colors break-words"
                         >
                             ms.maria.sanchez.molina@gmail.com
                         </a>
                     </div>
 
                     <div className="text-center md:flex-1 md:min-w-0">
-                        <span className="text-sm">@m.sanchezmolina</span>
+                        <a
+                            href="https://www.instagram.com/m.sanchezmolina"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm hover:text-green-500 transition-colors"
+                        >
+                            @m.sanchezmolina
+                        </a>
                     </div>
 
                     <div className="text-center md:flex-1 md:min-w-0">
@@ -95,13 +102,13 @@ export default function Footer() {
                                 title="Previous"
                                 className="p-2 cursor-pointer"
                             >
-                                <Image src="/assets/left.png" alt="Previous" width={24} height={24} />
+                                <Image src="/assets/left.webp" alt="Previous" width={24} height={24} />
                             </button>
                         )}
                     </div>
 
                     <div className="flex-1 text-center">
-                        <p className="text-sm2">© 2025 Maria Sanchez Molina</p>
+                        <p className="text-sm">© 2025 Maria Sanchez Molina</p>
                     </div>
 
                     <div className="flex items-center">
@@ -112,7 +119,7 @@ export default function Footer() {
                                 title="Next"
                                 className="p-2 cursor-pointer"
                             >
-                                <Image src="/assets/right.png" alt="Next" width={24} height={24} />
+                                <Image src="/assets/right.webp" alt="Next" width={24} height={24} />
                             </button>
                         )}
                     </div>

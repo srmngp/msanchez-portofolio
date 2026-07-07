@@ -5,43 +5,43 @@ import Gallery from "../../../components/Gallery";
 export default function ContenedorCultural() {
   const images = [
     {
-      src: "/design-projects/contenedor-cultural/imagen1_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen1_uma.webp",
       alt: "contenedor-cultural-1",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen2_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen2_uma.webp",
       alt: "contenedor-cultural-2",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen3_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen3_uma.webp",
       alt: "contenedor-cultural-3",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen4_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen4_uma.webp",
       alt: "contenedor-cultural-4",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen5_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen5_uma.webp",
       alt: "contenedor-cultural-5",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen6_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen6_uma.webp",
       alt: "contenedor-cultural-6",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/contenedor-cultural/imagen7_uma.jpg",
+      src: "/design-projects/contenedor-cultural/imagen7_uma.webp",
       alt: "contenedor-cultural-7",
       className: "md:col-span-2",
       aspectRatio: "1376/880",
@@ -50,7 +50,7 @@ export default function ContenedorCultural() {
 
   return (
     <ProjectDetails
-      image="/design-projects/contenedor-cultural/portada_uma.jpg"
+      image="/design-projects/contenedor-cultural/portada_uma.webp"
       title="Contenedor Cultural"
       description={[
         "During my internship at the University of Málaga’s cultural department, I worked as a Graphic Design Intern, creating art catalogues and exhibition materials.",

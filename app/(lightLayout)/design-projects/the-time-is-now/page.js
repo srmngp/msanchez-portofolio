@@ -8,12 +8,12 @@ export default function TheTimeIsNow() {
       height: 600,
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen1_ttin.png",
+          src: "/design-projects/the-time-is-now/imagen1_ttin.webp",
           alt: "the-time-is-now-1",
           className: "md:col-span-1",
         },
         {
-          src: "/design-projects/the-time-is-now/imagen2_ttin.jpg",
+          src: "/design-projects/the-time-is-now/imagen2_ttin.webp",
           alt: "the-time-is-now-2",
           className: "md:col-span-2",
         },
@@ -23,12 +23,12 @@ export default function TheTimeIsNow() {
       height: 600,
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen3_ttin.jpg",
+          src: "/design-projects/the-time-is-now/imagen3_ttin.webp",
           alt: "the-time-is-now-3",
           className: "md:col-span-2",
         },
         {
-          src: "/design-projects/the-time-is-now/imagen4_ttin.png",
+          src: "/design-projects/the-time-is-now/imagen4_ttin.webp",
           alt: "the-time-is-now-4",
           className: "md:col-span-1",
         },
@@ -37,7 +37,7 @@ export default function TheTimeIsNow() {
     {
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen5_ttin.png",
+          src: "/design-projects/the-time-is-now/imagen5_ttin.webp",
           alt: "the-time-is-now-5",
           className: "md:col-span-3",
           aspectRatio: "1376/880",
@@ -47,7 +47,7 @@ export default function TheTimeIsNow() {
     {
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen6_ttin.png",
+          src: "/design-projects/the-time-is-now/imagen6_ttin.webp",
           alt: "the-time-is-now-6",
           className: "md:col-span-3",
           aspectRatio: "1376/880",
@@ -57,7 +57,7 @@ export default function TheTimeIsNow() {
     {
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen7_ttin.jpg",
+          src: "/design-projects/the-time-is-now/imagen7_ttin.webp",
           alt: "the-time-is-now-7",
           className: "md:col-span-3",
           aspectRatio: "1376/880",
@@ -67,7 +67,7 @@ export default function TheTimeIsNow() {
     {
       images: [
         {
-          src: "/design-projects/the-time-is-now/imagen8_ttin.jpg",
+          src: "/design-projects/the-time-is-now/imagen8_ttin.webp",
           alt: "the-time-is-now-8",
           className: "md:col-span-3",
           aspectRatio: "1376/880",
@@ -77,7 +77,7 @@ export default function TheTimeIsNow() {
     {
       images: [
         {
-          src: "/design-projects/the-time-is-now/Fondo_Pisos_Nocturno_1.jpg",
+          src: "/design-projects/the-time-is-now/Fondo_Pisos_Nocturno_1.webp",
           alt: "the-time-is-now-fondo",
           className: "md:col-span-3",
           aspectRatio: "1376/880",
@@ -88,11 +88,11 @@ export default function TheTimeIsNow() {
 
   return (
     <ProjectDetails
-      image="/design-projects/the-time-is-now/portada_ttin.jpg"
+      image="/design-projects/the-time-is-now/portada_ttin.webp"
       title="The Time Is Now"
       description={[
         "Collaboration with an emerging Argentinian musician to design the visual identity for his new album.",
-        "Working hand to hand with the artist Peace Dealer I created a custom illustrated album cover and a personalized intro animation, blending visual storytelling with the artist's sound and identity to strengthen his personal brand.",
+        "Working hand in hand with the artist Peace Dealer I created a custom illustrated album cover and a personalized intro animation, blending visual storytelling with the artist's sound and identity to strengthen his personal brand.",
         "2024",
       ]}
       galleryComponent={<Gallery rows={galleryRows} gridCols={3} />}

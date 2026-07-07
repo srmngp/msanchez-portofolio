@@ -5,58 +5,58 @@ import Gallery from "../../../components/Gallery";
 export default function Xbit() {
   const images = [
     {
-      src: "/design-projects/xbit/imagen1_xbit.jpg",
+      src: "/design-projects/xbit/imagen1_xbit.webp",
       alt: "xbit-1",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen2_xbit.jpg",
+      src: "/design-projects/xbit/imagen2_xbit.webp",
       alt: "xbit-2",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen3_xbit.jpg",
+      src: "/design-projects/xbit/imagen3_xbit.webp",
       alt: "xbit-3",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen4_xbit.jpg",
+      src: "/design-projects/xbit/imagen4_xbit.webp",
       alt: "xbit-4",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen5_xbit.jpg",
+      src: "/design-projects/xbit/imagen5_xbit.webp",
       alt: "xbit-5",
       className: "md:col-span-2",
       aspectRatio: "1376/800",
     },
     {
-      src: "/design-projects/xbit/imagen6_xbit.jpg",
+      src: "/design-projects/xbit/imagen6_xbit.webp",
       alt: "xbit-6",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen7_xbit.jpg",
+      src: "/design-projects/xbit/imagen7_xbit.webp",
       alt: "xbit-7",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen8_xbit.jpg",
+      src: "/design-projects/xbit/imagen8_xbit.webp",
       alt: "xbit-8",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen9_xbit.jpg",
+      src: "/design-projects/xbit/imagen9_xbit.webp",
       alt: "xbit-9",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen10_xbit.jpg",
+      src: "/design-projects/xbit/imagen10_xbit.webp",
       alt: "xbit-10",
       aspectRatio: "678/908",
     },
     {
-      src: "/design-projects/xbit/imagen11_xbit.jpg",
+      src: "/design-projects/xbit/imagen11_xbit.webp",
       alt: "xbit-11",
       aspectRatio: "678/908",
     },
@@ -64,7 +64,7 @@ export default function Xbit() {
 
   return (
     <ProjectDetails
-      image="/design-projects/xbit/portada_xbit.jpg"
+      image="/design-projects/xbit/portada_xbit.webp"
       title="X.BIT"
       description={[
         "An independent cultural project in Berlin that connected emerging artists with local communities through exhibitions.",

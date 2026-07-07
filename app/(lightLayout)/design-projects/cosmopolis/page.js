@@ -7,49 +7,49 @@ import Gallery from "../../../components/Gallery";
 export default function Cosmopolis() {
   const images = [
     {
-      src: "/design-projects/cosmopolis/imagen1_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen1_cosmopolis.webp",
       alt: "cosmopolis-1",
       className: "md:col-span-1",
       aspectRatio: "440/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen2_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen2_cosmopolis.webp",
       alt: "cosmopolis-2",
       className: "md:col-span-2",
       aspectRatio: "903/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen3_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen3_cosmopolis.webp",
       alt: "cosmopolis-3",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen4_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen4_cosmopolis.webp",
       alt: "cosmopolis-4",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen5_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen5_cosmopolis.webp",
       alt: "cosmopolis-5",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen6_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen6_cosmopolis.webp",
       alt: "cosmopolis-6",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen7_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen7_cosmopolis.webp",
       alt: "cosmopolis-7",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
     },
     {
-      src: "/design-projects/cosmopolis/imagen8_cosmopolis.jpg",
+      src: "/design-projects/cosmopolis/imagen8_cosmopolis.webp",
       alt: "cosmopolis-8",
       className: "md:col-span-3",
       aspectRatio: "1376/880",
@@ -58,7 +58,7 @@ export default function Cosmopolis() {
 
   return (
     <ProjectDetails
-      image="/design-projects/cosmopolis/portada_cosmopolis.jpg"
+      image="/design-projects/cosmopolis/portada_cosmopolis.webp"
       title="Cosmopolis"
       description={[
         "Cosmopolis es un proyecto que explora la relación entre la ciudad y sus habitantes a través de la tipografía y el color.",

@@ -5,6 +5,7 @@ export default function Home() {
 
   return (
     <div className="grid grid-cols-2 gap-8 px-6">
+      <h1 className="sr-only">Art Production</h1>
       <ArtProductionProject
         href="/art-production/a-la-vera-de-mis-raices"
         image={"/art-production/a-la-vera/portada_raices.webp"}
