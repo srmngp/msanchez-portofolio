@@ -12,7 +12,7 @@ export default function Hero() {
                     <br />
                     MOLINA
                 </h1>
-                <div className="text-left lg:text-right self-start lg:self-end text-sm sm:text-base md:text-lg lg:text-xl">
+                <div className="text-left lg:text-right self-start lg:self-end leading-none space-y-2 text-sm sm:text-base md:text-lg lg:text-xl">
                     <p>FULL TIME DESIGNER</p>
                     <p>VISUAL ARTIST BY HEART</p>
                 </div>
