@@ -71,7 +71,7 @@ export default function Showcase() {
 
             <ProjectCard
                 href="design-projects/heart-of-gold"
-                src="/design-projects/heart-of-gold/portada_hog.webp"
+                src="/design-projects/heart-of-gold/cover_hog.webp"
                 alt="Heart of Gold Hostel"
                 title="Heart of Gold Hostel"
             />
