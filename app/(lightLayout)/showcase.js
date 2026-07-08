@@ -26,33 +26,11 @@ export default function Showcase() {
         <section className="mt-10 border-t border-black grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 px-6 pt-10">
 
             <ProjectCard
-                href="design-projects/xbit"
-                src="/design-projects/xbit/portada_xbit.webp"
-                alt="X.BIT"
-                title="X.BIT"
-                priority
-            />
-
-            <ProjectCard
-                href="design-projects/berlin-sonar"
-                src="/design-projects/sonar-berlin/portada_sonar.webp"
-                alt="Sonar Berlin"
-                title="Sonar Berlin"
-                priority
-            />
-
-            <ProjectCard
-                href="design-projects/cosmopolis"
-                src="/design-projects/cosmopolis/portada_cosmopolis.webp"
-                alt="Cosmopolis"
-                title="Cosmopolis"
-            />
-
-            <ProjectCard
                 href="design-projects/car-on-sale"
                 src="/design-projects/car-on-sale/portada_caronsale.webp"
                 alt="CarOnSale"
                 title="CarOnSale"
+                priority
             />
 
             <ProjectCard
@@ -60,6 +38,28 @@ export default function Showcase() {
                 src="/design-projects/sunflower-hostel/portada_sunflower.webp"
                 alt="Sunflower Hostel"
                 title="Sunflower Hostel"
+                priority
+            />
+
+            <ProjectCard
+                href="design-projects/xbit"
+                src="/design-projects/xbit/portada_xbit.webp"
+                alt="X.BIT"
+                title="X.BIT"
+            />
+
+            <ProjectCard
+                href="design-projects/berlin-sonar"
+                src="/design-projects/sonar-berlin/portada_sonar.webp"
+                alt="Sonar Berlin"
+                title="Sonar Berlin"
+            />
+
+            <ProjectCard
+                href="design-projects/cosmopolis"
+                src="/design-projects/cosmopolis/portada_cosmopolis.webp"
+                alt="Cosmopolis"
+                title="Cosmopolis"
             />
 
             <ProjectCard
