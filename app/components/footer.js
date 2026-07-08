@@ -39,7 +39,7 @@ export default function Footer() {
 
 
     useEffect(() => {
-        if (pathname === "/") return
+        if (currentIndex === -1) return
 
         function onKey(e) {
             if (e.key === "ArrowLeft") handlePrev()
@@ -95,7 +95,7 @@ export default function Footer() {
 
                 <div className="w-full pt-8 flex items-center justify-between">
                     <div className="flex items-center">
-                        {pathname !== "/" && (
+                        {currentIndex !== -1 && (
                             <button
                                 aria-label="Previous design project"
                                 onClick={handlePrev}
@@ -112,7 +112,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex items-center">
-                        {pathname !== "/" && (
+                        {currentIndex !== -1 && (
                             <button
                                 aria-label="Next design project"
                                 onClick={handleNext}
