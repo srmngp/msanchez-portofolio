@@ -89,7 +89,7 @@ export default function TheTimeIsNow() {
   return (
     <ProjectDetails
       image="/design-projects/the-time-is-now/portada_ttin.webp"
-      title="The Time Is Now"
+      title="The time is Now"
       description={[
         'Collaboration with Peace Dealer, an emerging musician from Córdoba, Argentina, to design the visual identity for his album "The Time Is Now." Working directly with the artist, I created the illustrated cover art and a custom intro animation — translating his sound and persona into one cohesive visual identity. Delivered fully remote, across Argentina and Germany.',
       ]}

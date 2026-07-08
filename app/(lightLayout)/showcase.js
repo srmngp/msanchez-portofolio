@@ -66,7 +66,7 @@ export default function Showcase() {
                 href="design-projects/the-time-is-now"
                 src="/design-projects/the-time-is-now/portada_ttin.webp"
                 alt="The time is now"
-                title="The time is now"
+                title="The time is Now"
             />
 
             <ProjectCard
