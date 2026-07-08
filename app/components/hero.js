@@ -5,7 +5,7 @@ export default function Hero() {
         <section className="px-3 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center">
 
-                <h1 className="font-black leading-none text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem]">
+                <h1 className="font-black leading-none text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem] lg:mb-[-0.18em]">
                     MARIA
                     <br />
                     SANCHEZ
