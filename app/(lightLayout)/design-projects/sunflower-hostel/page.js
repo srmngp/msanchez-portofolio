@@ -39,7 +39,18 @@ export default function SunflowerHostel() {
       imageAspectRatio="1376/800"
       title="Sunflower Hostel"
       description={[
-        "At Sunflower Hostel, one of Berlin's oldest hostels, I coordinate the content team and manage the hostel's social media output — planning, briefing, and design. Using Procreate, Adobe Creative Suite, and Canva, I built a refreshed visual identity across video, reels, and illustrated assets, capturing the hostel's rooms, activities, and atmosphere. The result: a visual identity that keeps the hostel's original spirit intact while speaking to a new generation of travelers.",
+        <>
+          {"At Sunflower Hostel, one of Berlin's oldest hostels, I coordinate the content team and manage the "}
+          <a
+            href="https://www.instagram.com/sunflower_hostel/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-500 transition-colors"
+          >
+            {"hostel's social media"}
+          </a>
+          {" output — planning, briefing, and design. Using Procreate, Adobe Creative Suite, and Canva, I built a refreshed visual identity across video, reels, and illustrated assets, capturing the hostel's rooms, activities, and atmosphere. The result: a visual identity that keeps the hostel's original spirit intact while speaking to a new generation of travelers."}
+        </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
       footer={

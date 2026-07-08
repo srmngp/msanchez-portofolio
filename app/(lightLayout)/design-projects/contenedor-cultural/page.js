@@ -53,9 +53,7 @@ export default function ContenedorCultural() {
       image="/design-projects/contenedor-cultural/portada_uma.webp"
       title="Contenedor Cultural"
       description={[
-        "During my internship at the University of Málaga’s cultural department, I worked as a Graphic Design Intern, creating art catalogues and exhibition materials.",
-        "My responsibilities included editorial design, advertising campaigns, and event promotion. The outcome was a series of catalogues and visual campaigns that boosted the visibility of the university’s cultural activities and exhibitions.",
-        "2020 - 2021",
+        "Graphic Design internship at the University of Málaga's cultural department (Vice-Rectorate of Culture), designing exhibition catalogues, event advertising, and print materials across vinyl, canvas, posters, and flyers. Ran concurrently with an internship at FANCINE Fantasy Film Festival, where I handled the festival's full branding and contributed to the website UI. Together, these gave me a first real look at the full production chain, from concept through physical print.",
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={

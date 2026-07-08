@@ -67,9 +67,17 @@ export default function Xbit() {
       image="/design-projects/xbit/portada_xbit.webp"
       title="X.BIT"
       description={[
-        "An independent cultural project in Berlin that connected emerging artists with local communities through exhibitions.",
-        "I worked as organizer, coordinator, and designer, managing artist curation, branding, and event logistics. The project showcased diverse artistic practices, built a creative network, and engaged Berlin’s underground art community.",
-        "2024 - 2025",
+        <>
+          <a
+            href="https://www.instagram.com/x.bitte/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-500 transition-colors"
+          >
+            Art Xbition
+          </a>
+          {" is an independent exhibition series I founded and ran in Berlin, connecting emerging artists with local audiences across three venues — Humboldthain Flakturm, Hasenheide Park, and Gelegenheiten in Neukölln. I led the project end to end: artist curation, visual identity, and event logistics, working with a small team and no external budget or agency. Three exhibitions, dozens of artists, and a growing network in Berlin's independent art scene."}
+        </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={

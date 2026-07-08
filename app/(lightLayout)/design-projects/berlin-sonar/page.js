@@ -41,9 +41,18 @@ export default function BerlinSonar() {
       image="/design-projects/sonar-berlin/portada_sonar.webp"
       title="Sonar Berlin"
       description={[
-        "Final Master’s project in UX/UI Design developed for Sonar Festival Berlin, a nonprofit organization.",
-        "I designed an interactive concept campaign through research, web design, and creativity, aiming to raise awareness about responsible drug consumption. The project combined interactivity with social responsibility, using design to engage and inform.",
-        "2023",
+        <>
+          {"Final project for my Master's in UX/UI Design, developed for "}
+          <a
+            href="https://safer-nightlife.berlin/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-500 transition-colors"
+          >
+            SONAR Berlin
+          </a>
+          {" — a coalition of Berlin harm-reduction and addiction-support organizations, including Clubcommission Berlin, working to reduce risk and build drug literacy in nightlife spaces. I designed an interactive campaign concept: a web-based experience where users engage with objects representing different substances, revealing harm-reduction information through interaction. Research-led and concept-driven, built in Figma."}
+        </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={

@@ -48,7 +48,18 @@ export default function CarOnSale() {
       image="/design-projects/car-on-sale/portada_caronsale.webp"
       title="CarOnSale"
       description={[
-        "Design and social media internship at CarOnSale, a Berlin-based automotive tech startup. I took ownership of content and asset creation for the company's social channels, and joined the core team behind a company-wide rebrand — producing visual assets across web, print, and social. Set up new production workflows using Freepik AI, NanoBanana, DataLeap, and Langdock to speed up content turnaround, and worked cross-functionally with Marketing, HR, Talent Acquisition, and Product Design.",
+        <>
+          {"Design and social media internship at CarOnSale, a Berlin-based automotive tech startup. I took ownership of content and asset creation for "}
+          <a
+            href="https://www.linkedin.com/company/caronsale/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-500 transition-colors"
+          >
+            {"CarOnSale's social channels"}
+          </a>
+          {", and joined the core team behind a company-wide rebrand — producing visual assets across web, print, and social. Set up new production workflows using Freepik AI, NanoBanana, DataLeap, and Langdock to speed up content turnaround, and worked cross-functionally with Marketing, HR, Talent Acquisition, and Product Design."}
+        </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
       footer={

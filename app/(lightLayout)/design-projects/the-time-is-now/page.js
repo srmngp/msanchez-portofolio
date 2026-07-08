@@ -91,9 +91,7 @@ export default function TheTimeIsNow() {
       image="/design-projects/the-time-is-now/portada_ttin.webp"
       title="The Time Is Now"
       description={[
-        "Collaboration with an emerging Argentinian musician to design the visual identity for his new album.",
-        "Working hand in hand with the artist Peace Dealer I created a custom illustrated album cover and a personalized intro animation, blending visual storytelling with the artist's sound and identity to strengthen his personal brand.",
-        "2024",
+        'Collaboration with Peace Dealer, an emerging musician from Córdoba, Argentina, to design the visual identity for his album "The Time Is Now." Working directly with the artist, I created the illustrated cover art and a custom intro animation — translating his sound and persona into one cohesive visual identity. Delivered fully remote, across Argentina and Germany.',
       ]}
       galleryComponent={<Gallery rows={galleryRows} gridCols={3} />}
       footer={

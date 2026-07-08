@@ -61,9 +61,7 @@ export default function Cosmopolis() {
       image="/design-projects/cosmopolis/portada_cosmopolis.webp"
       title="Cosmopolis"
       description={[
-        "Cosmopolis es un proyecto que explora la relación entre la ciudad y sus habitantes a través de la tipografía y el color.",
-        "La obra busca representar la diversidad y el dinamismo urbano mediante una composición visual impactante.",
-        "2024",
+        "Master's project in UX/UI Design. I designed Cosmopolis, a travel and social app built around local knowledge — connecting travelers with the places only residents know, instead of another guide to tourist landmarks. The concept came out of years working in Berlin's hospitality industry, watching what travelers actually wanted versus what they were being sold. Full process: user research, user flow, prototyping, and visual design in Figma.",
       ]}
       galleryComponent={<Gallery images={images} gridCols={3} />}
       footer={

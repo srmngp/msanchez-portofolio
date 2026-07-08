@@ -49,9 +49,7 @@ export default function HeartOfGold() {
       image="/design-projects/heart-of-gold/portada_hog.webp"
       title="Heart of Gold Hostel"
       description={[
-        "As part of a practical exercise, I selected the hostel where I previously worked to design and develop new graphic and branding materials based on their existing corporate identity.",
-        "My role as a Graphic Designer involved research, Adobe Suite, Figma, branding, and UI design. The outcome was a refreshed visual identity and communication assets that enhanced the hostel's visibility and strengthened guest engagement.",
-        "2024",
+        "I proposed and designed a full visual identity refresh for Heart of Gold Hostel, building on their existing corporate identity. The work covered research, branding, and UI design — using Adobe Creative Suite and Figma — and resulted in a refreshed visual identity and set of communication assets designed to strengthen the hostel's guest-facing presence.",
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={
