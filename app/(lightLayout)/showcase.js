@@ -23,7 +23,7 @@ function ProjectCard({ href, src, alt, title, priority = false }) {
 
 export default function Showcase() {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 px-6 pt-10">
+        <section className="mt-10 border-t border-black grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 px-6 pt-10">
 
             <ProjectCard
                 href="design-projects/xbit"
