@@ -138,7 +138,7 @@ export default function PersonalData() {
   return (
     <>
       <Hero />
-      <div>
+      <div className="mt-10 border-t border-black pt-4">
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 sm:gap-8 p-6 mb-8">
           <div className="w-full md:w-1/2 aspect-[683/778] relative overflow-hidden">
             <Image
