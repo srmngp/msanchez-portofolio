@@ -25,7 +25,7 @@ export default function ProjectFooter({ sections = {}, className = '' }) {
 
     return (
         <footer className={`w-full border-gray-200 bg-white ${className}`}>
-            <div className={`p-6 px-6 w-full ${gridClass} text-left`}>
+            <div className={`p-3 md:p-6 w-full ${gridClass} text-left`}>
                 {normalized.map((s, i) => (
                     <Section key={s.title || i} title={s.title} items={s.items} />
                 ))}

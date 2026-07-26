@@ -4,7 +4,7 @@ export default function ProjectDetails({ image, title, description, galleryCompo
   return (
     <article>
 
-      <div className="flex justify-center mb-8 p-3 md:p-6">
+      <div className="flex justify-center mb-4 md:mb-8 p-3 md:p-6">
         {imageAspectRatio ? (
           <div className="relative w-full overflow-hidden" style={{ aspectRatio: imageAspectRatio }}>
             <Image
