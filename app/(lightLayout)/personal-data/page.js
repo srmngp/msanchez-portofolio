@@ -173,10 +173,6 @@ export default function PersonalData() {
           </p>
         </div>
 
-        <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Studies</h2>
-        <hr className="border-gray-600" />
-        <ListSection items={studiesData} />
-
         <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Projects and Collaborations</h2>
         <hr className="border-gray-600" />
         <ListSection items={projectsData} />
@@ -184,6 +180,10 @@ export default function PersonalData() {
         <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Exhibitions</h2>
         <hr className="border-gray-600" />
         <ListSection items={exhibitionsData} />
+
+        <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Studies</h2>
+        <hr className="border-gray-600" />
+        <ListSection items={studiesData} />
 
       </div>
     </>
