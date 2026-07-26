@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <header className="w-full mb-4 sm:mb-6">
-            <nav className="px-4 py-3 sm:px-6 sm:py-4 border-b dark:background-gray-900">
+            <nav className="px-3 py-3 sm:px-6 sm:py-4 border-b dark:background-gray-900">
                 {/* Desktop layout */}
                 <ul className="hidden md:flex justify-between text-xl">
                     <li>

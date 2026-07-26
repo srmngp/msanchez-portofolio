@@ -4,7 +4,7 @@ export default function ProjectDetails({ image, title, description, galleryCompo
   return (
     <article>
 
-      <div className="flex justify-center mb-8 p-6">
+      <div className="flex justify-center mb-8 p-3 md:p-6">
         {imageAspectRatio ? (
           <div className="relative w-full overflow-hidden" style={{ aspectRatio: imageAspectRatio }}>
             <Image
@@ -27,11 +27,11 @@ export default function ProjectDetails({ image, title, description, galleryCompo
         )}
       </div>
 
-      <h1 className="text-4xl font-bold mb-2 pl-6">{title}</h1>
+      <h1 className="text-4xl font-bold mb-2 pl-3 md:pl-6">{title}</h1>
 
       <hr className="border-gray-600" />
 
-      <div className="text-lg text-left p-6">
+      <div className="text-base md:text-lg text-left p-3 md:p-6">
         {description.map((para, idx) => (
           <p key={idx} className="mb-4">
             {para}

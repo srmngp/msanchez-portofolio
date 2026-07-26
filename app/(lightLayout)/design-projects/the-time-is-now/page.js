@@ -5,32 +5,38 @@ import Gallery from "../../../components/Gallery";
 export default function TheTimeIsNow() {
   const galleryRows = [
     {
-      height: 600,
       images: [
         {
           src: "/design-projects/the-time-is-now/imagen1_ttin.webp",
           alt: "the-time-is-now-1",
           className: "md:col-span-1",
+          aspectRatio: "440/880",
+          mobileAspectRatio: "1440/870",
         },
         {
           src: "/design-projects/the-time-is-now/imagen2_ttin.webp",
           alt: "the-time-is-now-2",
           className: "md:col-span-2",
+          aspectRatio: "903/880",
+          mobileAspectRatio: "1/1",
         },
       ],
     },
     {
-      height: 600,
       images: [
         {
           src: "/design-projects/the-time-is-now/imagen3_ttin.webp",
           alt: "the-time-is-now-3",
           className: "md:col-span-2",
+          aspectRatio: "904/900",
+          mobileAspectRatio: "1/1",
         },
         {
           src: "/design-projects/the-time-is-now/imagen4_ttin.webp",
           alt: "the-time-is-now-4",
           className: "md:col-span-1",
+          aspectRatio: "440/900",
+          mobileAspectRatio: "1440/870",
         },
       ],
     },

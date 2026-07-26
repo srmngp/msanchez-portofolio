@@ -42,3 +42,15 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
+
+/* Gallery images: natural (uncropped) aspect ratio on mobile,
+   switching to the designed aspect ratio from the md breakpoint up. */
+.gallery-responsive-aspect {
+  aspect-ratio: var(--ar-mobile);
+}
+
+@media (min-width: 768px) {
+  .gallery-responsive-aspect {
+    aspect-ratio: var(--ar-desktop);
+  }
+}
