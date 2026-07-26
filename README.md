@@ -49,3 +49,35 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### Notes
 - Art Production (`app/(darkLayout)`) is forced dark regardless of the OS `prefers-color-scheme`: `--color-dark` is defined in `globals.css` so `bg-dark` is a real utility, and the layout wrapper uses `min-h-screen bg-dark text-white` with `color-scheme: dark`.
+
+### Image assets — WebP conversion (always use this process)
+
+Source images (the raw exports in the `2026-07_Images_Portfolio` folders) must never be committed as-is. Convert every image to WebP with the **same** settings so the whole site stays consistent.
+
+**Where files go / naming** (`public/design-projects/<project>/`):
+
+- `portada_<project>.webp` — project header (shown large at the top of the project page)
+- `cover_<project>.webp` — card image in the home grid (`showcase.js`)
+- `imagen1_<project>.webp` … `imagenN_<project>.webp` — gallery images (order matters)
+
+**Standard conversion** (ImageMagick — the only tool installed; no `cwebp`/`vips`):
+
+```bash
+convert "SOURCE.png" -resize '2560x>' -quality 80 -strip \
+  "public/design-projects/<project>/<name>.webp"
+```
+
+- `2560x>` = downscale to 2560px wide max (retina-sharp even for the large header), keep aspect ratio, never upscale.
+- `-quality 80` and `-strip` (drops metadata) — matches all existing assets (~15–350 KB each).
+- The aspect ratios in each project's `page.js` (`aspectRatio` / `mobileAspectRatio`) crop via CSS `object-cover`; set them to match the Figma frame, not the raw file.
+
+**Huge source PNGs (≈12000+ px, tens of MB) — do NOT crash the machine:**
+
+Decoding these in ImageMagick is heavy and a naive run (especially with a large `-limit map`, which memory-maps to disk and thrashes) has frozen the dev machine. Convert them **one at a time**, RAM-bound and low-priority:
+
+```bash
+nice -n 19 ionice -c 3 convert -limit memory 2GiB -limit map 256MiB -limit thread 1 \
+  "SOURCE.png" -resize '2560x>' -quality 80 -strip "OUT.webp.tmp" && mv "OUT.webp.tmp" "OUT.webp"
+```
+
+Never batch several giant conversions in parallel, and don't leave a headless browser open while converting.
