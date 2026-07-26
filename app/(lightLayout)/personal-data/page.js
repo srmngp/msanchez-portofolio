@@ -6,27 +6,29 @@ export default function PersonalData() {
   const studiesData = [
     {
       title: "Barcelona School of Art & Design (LABASAD).",
-      lines: ["Barcelona, Spain.", "2022/2023. Online master in Web Design and App: UX/UI"]
+      lines: ["Barcelona, Spain.", "2022/2023", "Online master in Web Design and App: UX/UI"]
     },
     {
       title: "University of Malaga (UMA).",
       lines: [
         "Málaga, Spain",
-        "2015/2020 Fine Arts Degree.",
-        "2020/2021 Master in Interdisciplinary Artistic Production."
+        "2015/2020",
+        "Fine Arts Degree.",
+        "2020/2021",
+        "Master in Interdisciplinary Artistic Production."
       ]
     },
     {
       title: "University of Ostrava (OSU).",
-      lines: ["Ostrava, Czech Republic", "2018/2019. Erasmus programe."]
+      lines: ["Ostrava, Czech Republic", "2018/2019", "Erasmus programe."]
     },
     {
       title: "Self-management Course: For artists, musicians and creators.",
-      lines: ["2020 Link by UMA."]
+      lines: ["2020", "Link by UMA."]
     },
     {
       title: "Commercial Spaces Course: Visual Merchandise.",
-      lines: ["2019 Link by UMA & IKEA."]
+      lines: ["2019", "Link by UMA & IKEA."]
     }
   ]
 
@@ -35,7 +37,8 @@ export default function PersonalData() {
       title: "CarOnSale (Castle Tech GmbH)",
       lines: [
         "Berlin, Germany,",
-        "Design & Social Media Intern. 2025/2026",
+        "Design & Social Media Intern.",
+        "2025/2026",
         "Took ownership of content and asset creation for the brand's social channels, and joined the core team behind a company-wide rebrand — producing visual assets across web, print, and social."
       ]
     },
@@ -43,7 +46,8 @@ export default function PersonalData() {
       title: "Art Xbition, Berlin.",
       lines: [
         "Berlin, Germany.",
-        "Organizer and Creative Director. 2024/2025",
+        "Organizer and Creative Director.",
+        "2024/2025",
         "Designed the exhibition series' visual identity, researched and selected emerging artists, and managed event logistics and timelines."
       ]
     },
