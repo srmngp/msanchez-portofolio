@@ -9,7 +9,7 @@ export default function CarOnSale() {
     {
       src: "/design-projects/car-on-sale/imagen1_caronsale.webp",
       alt: "caronsale-1",
-      aspectRatio: "2560/1440",
+      aspectRatio: "1376/810",
     },
     {
       src: "/design-projects/car-on-sale/imagen2_caronsale.webp",
@@ -24,22 +24,22 @@ export default function CarOnSale() {
     {
       src: "/design-projects/car-on-sale/imagen4_caronsale.webp",
       alt: "caronsale-4",
-      aspectRatio: "16/9",
+      aspectRatio: "1376/810",
     },
     {
       src: "/design-projects/car-on-sale/imagen5_caronsale.webp",
       alt: "caronsale-5",
-      aspectRatio: "16/9",
+      aspectRatio: "1376/810",
     },
     {
       src: "/design-projects/car-on-sale/imagen6_caronsale.webp",
       alt: "caronsale-6",
-      aspectRatio: "16/9",
+      aspectRatio: "1376/810",
     },
     {
       src: "/design-projects/car-on-sale/imagen7_caronsale.webp",
       alt: "caronsale-7",
-      aspectRatio: "16/9",
+      aspectRatio: "1376/810",
     },
   ];
 
