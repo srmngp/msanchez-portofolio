@@ -4,14 +4,23 @@ import React, { useEffect } from "react"
 import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { designProjectRoutes } from "../data/designProjects"
+import { artProductionRoutes } from "../data/artProductionProjects"
 
 export default function Footer() {
     const pathname = usePathname()
     const router = useRouter()
 
-    const projectRoutes = designProjectRoutes;
+    // Pick the route set the current page belongs to (design vs. art production)
+    const projectRoutes =
+        [designProjectRoutes, artProductionRoutes].find((routes) =>
+            routes.some((p) => pathname?.startsWith(p))
+        ) || []
 
     const currentIndex = projectRoutes.findIndex((p) => pathname?.startsWith(p))
+
+    // Art production pages use the forced-dark layout, so the black arrow icons
+    // need to be inverted to white to stay visible.
+    const isDark = artProductionRoutes.some((p) => pathname?.startsWith(p))
 
     function goToIndex(i) {
         if (i >= 0 && i < projectRoutes.length) router.push(projectRoutes[i])
@@ -97,12 +106,12 @@ export default function Footer() {
                     <div className="flex items-center">
                         {currentIndex !== -1 && (
                             <button
-                                aria-label="Previous design project"
+                                aria-label="Previous project"
                                 onClick={handlePrev}
                                 title="Previous"
                                 className="p-2 cursor-pointer"
                             >
-                                <Image src="/assets/left.webp" alt="Previous" width={24} height={24} />
+                                <Image src="/assets/left.webp" alt="Previous" width={24} height={24} className={isDark ? "invert" : ""} />
                             </button>
                         )}
                     </div>
@@ -114,12 +123,12 @@ export default function Footer() {
                     <div className="flex items-center">
                         {currentIndex !== -1 && (
                             <button
-                                aria-label="Next design project"
+                                aria-label="Next project"
                                 onClick={handleNext}
                                 title="Next"
                                 className="p-2 cursor-pointer"
                             >
-                                <Image src="/assets/right.webp" alt="Next" width={24} height={24} />
+                                <Image src="/assets/right.webp" alt="Next" width={24} height={24} className={isDark ? "invert" : ""} />
                             </button>
                         )}
                     </div>
