@@ -117,7 +117,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex-1 text-center">
-                        <p className="text-sm">© 2025 Maria Sanchez Molina</p>
+                        <p className="text-sm">© 2026 Maria Sanchez Molina</p>
                     </div>
 
                     <div className="flex items-center">
