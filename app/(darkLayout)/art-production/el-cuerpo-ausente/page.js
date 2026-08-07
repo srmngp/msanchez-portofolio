@@ -37,7 +37,8 @@ export default function ElCuerpoAusente() {
       image="/art-production/el-cuerpo-ausente/portada_cuerpo-ausente.webp"
       title="El Cuerpo Ausente"
       description={[
-        "A photographic and painterly exploration of absence. By digitally erasing figures from archival photographs and replacing them with drawn silhouettes, the work confronts the void left by missing presences and the silent narratives of empty spaces.",
+        "Made during my exchange year in the Czech Republic, and the piece where I worked across the most media at once — photography, photographic intervention, and painting layered over each other.",
+        "Here the wreath disappears and only the place is left. It's about the emptiness after losing someone close, and specifically about what time does to it: the memory slowly distorts, details drop away, and eventually all that remains is a thread of nostalgia. A feeling that can't be described, only felt — how every place that person once occupied quietly turns into longing.",
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
     />

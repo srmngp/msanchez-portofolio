@@ -4,31 +4,35 @@ import Link from "next/link"
 export default function Home() {
 
   return (
-    <div className="grid grid-cols-2 gap-8 px-6">
+    <div className="px-6">
+
       <h1 className="sr-only">Art Production</h1>
-      <ArtProductionProject
-        href="/art-production/a-la-vera-de-mis-raices"
-        image={"/art-production/a-la-vera/portada_raices.webp"}
-        title="A la vera de mis raíces"
-        subtitle="Crochet and textile art" />
 
-      <ArtProductionProject
-        href="/art-production/el-cuerpo-ausente"
-        image={"/art-production/el-cuerpo-ausente/portada_cuerpo-ausente.webp"}
-        title="El Cuerpo Ausente"
-        subtitle="Photography, digital manipulation, painting" />
+      <div className="grid grid-cols-2 gap-8">
+        <ArtProductionProject
+          href="/art-production/a-la-vera-de-mis-raices"
+          image={"/art-production/a-la-vera/portada_raices.webp"}
+          title="A la vera de mis raíces"
+          subtitle="Crochet and textile art · 2020–2021" />
 
-      <ArtProductionProject
-        href="/art-production/duelo"
-        image={"/art-production/duelo/portada_duelo.webp"}
-        title="Duelo"
-        subtitle="Performance and site-specific intervention" />
+        <ArtProductionProject
+          href="/art-production/el-cuerpo-ausente"
+          image={"/art-production/el-cuerpo-ausente/portada_cuerpo-ausente.webp"}
+          title="El Cuerpo Ausente"
+          subtitle="Photography, digital manipulation, painting · 2018–2019" />
 
-      <ArtProductionProject
-        href="/art-production/ofrenda"
-        image={"/art-production/ofrenda/portada_ofrenda.webp"}
-        title="Ofrenda"
-        subtitle="Embroidery and textile art." />
+        <ArtProductionProject
+          href="/art-production/duelo"
+          image={"/art-production/duelo/portada_duelo.webp"}
+          title="Duelo"
+          subtitle="Performance and site-specific intervention · 2018" />
+
+        <ArtProductionProject
+          href="/art-production/ofrenda"
+          image={"/art-production/ofrenda/portada_ofrenda.webp"}
+          title="Ofrenda"
+          subtitle="Embroidery and textile art · 2017–2018" />
+      </div>
 
     </div>
   )

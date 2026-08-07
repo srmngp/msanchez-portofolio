@@ -6,21 +6,24 @@ export default function PersonalData() {
   const studiesData = [
     {
       title: "Barcelona School of Art & Design (LABASAD).",
-      lines: ["Barcelona, Spain.", "2022/2023", "Online master in Web Design and App: UX/UI"]
+      lines: ["Barcelona, Spain (online).", "2022/2023", "Master in Web and App Design: UX/UI."]
     },
     {
       title: "University of Malaga (UMA).",
       lines: [
-        "Málaga, Spain",
-        "2015/2020",
-        "Fine Arts Degree.",
+        "Málaga, Spain.",
         "2020/2021",
         "Master in Interdisciplinary Artistic Production."
       ]
     },
     {
-      title: "University of Ostrava (OSU).",
-      lines: ["Ostrava, Czech Republic", "2018/2019", "Erasmus programe."]
+      title: "University of Malaga (UMA).",
+      lines: [
+        "Málaga, Spain.",
+        "2015/2020",
+        "Fine Arts Degree.",
+        "└ University of Ostrava (OSU), Czech Republic. 2018/2019 — Erasmus Programme."
+      ]
     },
     {
       title: "Self-management Course: For artists, musicians and creators.",
@@ -37,7 +40,7 @@ export default function PersonalData() {
       title: "CarOnSale (Castle Tech GmbH)",
       lines: [
         "Berlin, Germany,",
-        "Design & Social Media Intern.",
+        "Social Media & Design.",
         "2025/2026",
         "Took ownership of content and asset creation for the brand's social channels, and joined the core team behind a company-wide rebrand — producing visual assets across web, print, and social."
       ]
@@ -46,8 +49,8 @@ export default function PersonalData() {
       title: "Art Xbition, Berlin.",
       lines: [
         "Berlin, Germany.",
-        "Organizer and Creative Director.",
-        "2024/2025",
+        "Co-founder & Creative Direction.",
+        "07/2024–06/2025",
         "Designed the exhibition series' visual identity, researched and selected emerging artists, and managed event logistics and timelines."
       ]
     },
@@ -55,9 +58,17 @@ export default function PersonalData() {
       title: "Sunflower Hostel",
       lines: [
         "Berlin, Germany.",
-        "Social Media Coordinator & Designer.",
-        "2024/2025",
+        "Social Media Team Coordinator.",
+        "2024–Present",
         "Refreshed the hostel's visual identity for social media, produced promotional content, and managed digital communication."
+      ]
+    },
+    {
+      title: "Heart of Gold Hostel",
+      lines: [
+        "Berlin, Germany.",
+        "Graphic Designer.",
+        "2023/2024"
       ]
     },
     {
@@ -73,17 +84,8 @@ export default function PersonalData() {
       title: "Fancine Fantasy Film Festival",
       lines: [
         "Málaga, Spain.",
-        "Graphic Design Internship.",
-        "2020",
-        "Designed the festival's visual branding and contributed to the website UI, alongside promotional materials for the event."
-      ]
-    },
-    {
-      title: "Mural Hospital Materno",
-      lines: [
-        "Málaga, Spain.",
-        "2017",
-        "Collaborated on a mural for the hospital's maternity ward."
+        "Merch, catalogue and photography.",
+        "2020"
       ]
     },
     {
@@ -93,10 +95,32 @@ export default function PersonalData() {
         "2016/2018",
         "Organized and took part in cultural and artistic events promoting local art in Málaga."
       ]
+    },
+    {
+      title: "Mural Hospital Materno",
+      lines: [
+        "Málaga, Spain.",
+        "2017",
+        "Collaborated on a mural for the hospital's maternity ward."
+      ]
     }
   ]
 
   const exhibitionsData = [
+    {
+      title: "Art Xbition × Nachtleben Berlin: Noche de Junta",
+      lines: [
+        "Berlin, Germany.",
+        "06/06/2025"
+      ]
+    },
+    {
+      title: "Art Xbition × Underlab: whisprrr",
+      lines: [
+        "Berlin, Germany.",
+        "10/05/2025"
+      ]
+    },
     {
       title: "Art Xbition: Gelegenheiten",
       lines: [
@@ -125,7 +149,7 @@ export default function PersonalData() {
       title: "Master Showcase",
       lines: [
         "University of Málaga, Spain.",
-        "2020",
+        "2021",
         "Presentation of work developed during the Master's in Interdisciplinary Artistic Production."
       ]
     },
@@ -169,6 +193,16 @@ export default function PersonalData() {
           <p className="text-lg leading-relaxed columns-1 md:columns-2 gap-6 sm:gap-8">
             {"I'm a Spanish designer based in Berlin, with a foundation in Fine Arts that shapes how I approach every project, blending artistic sensibility with technical expertise."}
             <br /><br />
+            {"I work across two connected tracks. In "}
+            <strong>{"social media and content"}</strong>
+            {", I build and run brand presence end to end — most recently averaging "}
+            <strong>{"34.94% LinkedIn engagement over 90 days at CarOnSale"}</strong>
+            {" (roughly 10× benchmark, 120K+ organic reach) and growing Sunflower Hostel's Instagram "}
+            <strong>{"~44% in a year"}</strong>
+            {". In "}
+            <strong>{"product and UX/UI"}</strong>
+            {", I bring formal training and a research-led process to interfaces that have to be genuinely accessible, not just attractive."}
+            <br /><br />
             {"Across my work I've built visual identities, designed digital products, produced content systems, and curated exhibitions, moving between traditional techniques and tools like Figma, Procreate, Magnific (Freepik), NanoBanana, and Higgsfield. That range lets me move across branding, editorial design, content creation, and user-centered digital experiences."}
             <br /><br />
             {"Alongside my professional practice, I keep an independent artistic practice — exploring memory, tradition, and identity through embroidery, crochet, performance, and video."}
@@ -185,7 +219,7 @@ export default function PersonalData() {
         <hr className="border-gray-600" />
         <ListSection items={exhibitionsData} />
 
-        <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Studies</h2>
+        <h2 className="py-6 text-3xl sm:text-4xl md:text-5xl pl-6 mb-2">Education</h2>
         <hr className="border-gray-600" />
         <ListSection items={studiesData} />
 

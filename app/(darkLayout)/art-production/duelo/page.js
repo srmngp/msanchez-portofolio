@@ -37,7 +37,19 @@ export default function Duelo() {
       image="/art-production/duelo/portada_duelo.webp"
       title="Duelo"
       description={[
-        "A performance piece exploring mourning rituals and their presence in public space. Through minimal interventions resembling offerings, the work transforms ordinary environments into sites of reflection, evoking the emotional resonance of collective memory and grief.",
+        "The wreath left the frame and became an object I carried.",
+        "Dressed in black, I made flower wreaths by hand and took them to a series of specific places — the places that remind me of my father, who died. When he went, he went from all of them: the rooms, the corners, the streets we shared. The piece is a tribute paid to each one separately, in the place itself.",
+        "It came from the flowers people leave at the roadside after a fatal accident. Every time I pass one of those altars I feel respect, and I feel fear — they are a reminder of how easily a life ends, planted in the exact spot where it did. I wanted to carry that feeling somewhere other than the roadside.",
+        <>
+          {"Working with place, body, absence and death, "}
+          <em>Duelo</em>
+          {" is the prelude to "}
+          <em>El Cuerpo Ausente</em>
+          {"."}
+        </>,
+        <em key="note">
+          {"Never exhibited. The exhibition proposal was an archive of the performance itself: photographs, video, and the address of every location."}
+        </em>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
     />

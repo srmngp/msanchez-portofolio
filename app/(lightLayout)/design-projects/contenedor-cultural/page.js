@@ -53,16 +53,19 @@ export default function ContenedorCultural() {
       image="/design-projects/contenedor-cultural/portada_uma.webp"
       title="Contenedor Cultural"
       description={[
-        "Graphic Design internship at the University of Málaga's cultural department (Vice-Rectorate of Culture), designing exhibition catalogues, event advertising, and print materials across vinyl, canvas, posters, and flyers. Ran concurrently with an internship at FANCINE Fantasy Film Festival, where I handled the festival's full branding and contributed to the website UI. Together, these gave me a first real look at the full production chain, from concept through physical print.",
+        "Graphic design internship at the University of Málaga's cultural department — Contenedor Cultural, under the Vice-Rectorate of Culture — designing exhibition catalogues, event advertising, and print materials across vinyl, canvas, posters, and flyers, plus augmented reality assets and video editing for institutional campaigns. Ran alongside my Fine Arts degree and my Master's in Interdisciplinary Artistic Production.",
+        "This is where I learned the full production chain, from concept through physical print.",
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={
         <ProjectFooter
           sections={{
-            Agency: ["Contenedor Cultural", "University of Málaga", "Culture Vice-Rectorate"],
-            "Creative director": ["Agustin Linares"],
-            Designer: ["Maria Sanchez", "Lola Palacios", "Maria José García", "Irene Ramírez"],
-            Location: ["Malaga, Spain"],
+            Role: ["Graphic Design Intern"],
+            Dates: ["2020 – 2021"],
+            Entity: ["Contenedor Cultural", "University of Málaga", "Culture Vice-Rectorate"],
+            "Creative director": ["Agustín Linares"],
+            Designer: ["María Sánchez", "Lola Palacios", "María José García", "Irene Ramírez"],
+            Location: ["Málaga, Spain"],
           }}
         />
       }

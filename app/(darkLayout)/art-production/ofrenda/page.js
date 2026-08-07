@@ -32,7 +32,10 @@ export default function Ofrenda() {
       image="/art-production/ofrenda/portada_ofrenda.webp"
       title="Ofrenda"
       description={[
-        "A mixed-media project that reflects on memory and absence through the symbolism of funeral flowers. Childhood photographs were reinterpreted into floral compositions, creating a ritual-like space where personal memories transform into universal reflections on loss and remembrance.",
+        "The first piece I made about life, death and family, and the one everything else came out of.",
+        "I started from the funeral wreath — the object that turns up whenever someone dies, always the same, always flowers. I designed a series of wreath patterns to be embroidered, but with one substitution: what looks like a flower isn't one. Each is an image pulled from the memories of the person who has gone, abstracted until it reads as petal, leaf, stem.",
+        "That substitution is the whole idea. Embroidering an image doesn't preserve it — the thread turns it into something else, and what you end up with is new. Which is what I think happens to a life: it doesn't disappear, it transforms.",
+        <em key="note">{"Exhibited at the Botanical Garden, Málaga, 2019."}</em>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
     />

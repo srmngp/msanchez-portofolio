@@ -97,15 +97,22 @@ export default function TheTimeIsNow() {
       image="/design-projects/the-time-is-now/portada_ttin.webp"
       title="The time is Now"
       description={[
-        'Collaboration with Peace Dealer, an emerging musician from Córdoba, Argentina, to design the visual identity for his album "The Time Is Now." Working directly with the artist, I created the illustrated cover art and a custom intro animation — translating his sound and persona into one cohesive visual identity. Delivered fully remote, across Argentina and Germany.',
+        <>
+          {"Collaboration with Peace Dealer, an emerging musician from Córdoba, Argentina, to design the visual identity for his album "}
+          <em>{"The Time Is Now."}</em>
+          {" The commission came through a mutual contact — a friend of his who knew my work. Working directly with the artist over two months, I created the illustrated cover art and a custom intro animation, translating his sound and persona into one cohesive visual identity. Delivered fully remote, across Argentina and Germany, from first conversation to final assets."}
+        </>,
+        <em key="note">
+          {"The album was never released. The animation is published here with the artist's permission."}
+        </em>,
       ]}
       galleryComponent={<Gallery rows={galleryRows} gridCols={3} />}
       footer={
         <ProjectFooter
           sections={{
-            Agency: ["Independent Project"],
-            "Creative director": ["María Sánchez", "Peace Dealer"],
-            Designer: ["Maria Sanchez"],
+            Role: ["Visual Identity & Illustration"],
+            Dates: ["July – September 2024"],
+            Entity: ["Independent, with Peace Dealer"],
             Location: ["Córdoba, Argentina", "Berlin, Germany"],
           }}
         />

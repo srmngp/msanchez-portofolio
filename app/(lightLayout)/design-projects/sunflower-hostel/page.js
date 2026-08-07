@@ -49,13 +49,19 @@ export default function SunflowerHostel() {
           >
             {"hostel's social media"}
           </a>
-          {" output — planning, briefing, and design. Using Procreate, Adobe Creative Suite, and Canva, I built a refreshed visual identity across video, reels, and illustrated assets, capturing the hostel's rooms, activities, and atmosphere. The result: a visual identity that keeps the hostel's original spirit intact while speaking to a new generation of travelers."}
+          {" output — planning, briefing, and design. Using Procreate, Adobe Creative Suite, and Canva, I built a refreshed visual identity across video, reels, and illustrated assets, capturing the hostel's rooms, activities, and atmosphere."}
+        </>,
+        <>
+          {"I built the presence from scratch and have run a full year of sustained multi-format content. Engagement analysis showed reels outperforming every other format, so I shifted the content mix toward them — "}
+          <strong>{"followers grew ~44% over the year."}</strong>
         </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
       footer={
         <ProjectFooter
           sections={{
+            Role: ["Social Media Team Coordinator"],
+            Dates: ["2024 – Present"],
             Entity: ["Sunflower Hostel"],
             "Creative Team": [
               "María Sánchez",
@@ -63,7 +69,6 @@ export default function SunflowerHostel() {
               "Mathias Pasula",
               "Marianthi Eulogitou",
             ],
-            Designer: ["María Sánchez"],
             Location: ["Berlin, Germany"],
           }}
         />

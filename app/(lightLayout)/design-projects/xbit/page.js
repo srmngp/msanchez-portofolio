@@ -76,21 +76,43 @@ export default function Xbit() {
           >
             Art Xbition
           </a>
-          {" is an independent exhibition series I founded and ran in Berlin, connecting emerging artists with local audiences across three venues — Humboldthain Flakturm, Hasenheide Park, and Gelegenheiten in Neukölln. I led the project end to end: artist curation, visual identity, and event logistics, working with a small team and no external budget or agency. Three exhibitions, dozens of artists, and a growing network in Berlin's independent art scene."}
+          {" was an independent exhibition series I co-founded and ran in Berlin with three other designers. Between us we directed the whole thing — artist curation, visual identity, event logistics, production — with "}
+          <strong>{"no external budget, no agency, and no client."}</strong>
+        </>,
+        <>
+          <strong>{"Five events in eleven months."}</strong>
+          {" Three exhibitions we produced ourselves, across three Berlin venues, and two collaborative editions with established platforms from the city's art and nightlife scene. Dozens of artists, and a working network in Berlin's independent art scene that outlasted the project."}
+        </>,
+        <>
+          <strong>{"Hasenheide Park"}</strong>
+          {" — 18 July 2024"}
+          <br />
+          <strong>{"Humboldthain Flakturm"}</strong>
+          {" — 9 August 2024"}
+          <br />
+          <strong>{"Gelegenheiten, Neukölln"}</strong>
+          {" — 15 February 2025"}
+          <br />
+          <strong>whisprrr</strong>
+          {", with Underlab — 10 May 2025"}
+          <br />
+          <strong>{"Noche de Junta"}</strong>
+          {", with Nachtleben Berlin — 6 June 2025"}
         </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={2} />}
       footer={
         <ProjectFooter
           sections={{
+            Role: ["Co-founder & Creative Direction"],
+            Dates: ["July 2024 – June 2025"],
             Agency: ["X.BIT"],
-            "Creative director": [
+            "Creative direction": [
               "María Sánchez",
               "Francesca Cicconi",
               "Shanon Kennedy",
               "Anna Morreale",
             ],
-            Designer: ["Maria Sanchez", "Shanon Kennedy", "Anna Morreale"],
             Location: ["Berlin, Germany"],
           }}
         />
