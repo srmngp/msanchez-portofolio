@@ -40,18 +40,9 @@ export default function PersonalData() {
       title: "CarOnSale (Castle Tech GmbH)",
       lines: [
         "Berlin, Germany,",
-        "Social Media & Design.",
-        "2025/2026",
+        "Social Media & Design Intern.",
+        "12/2025 – 05/2026",
         "Took ownership of content and asset creation for the brand's social channels, and joined the core team behind a company-wide rebrand — producing visual assets across web, print, and social."
-      ]
-    },
-    {
-      title: "Art Xbition, Berlin.",
-      lines: [
-        "Berlin, Germany.",
-        "Co-founder & Creative Direction.",
-        "07/2024–06/2025",
-        "Designed the exhibition series' visual identity, researched and selected emerging artists, and managed event logistics and timelines."
       ]
     },
     {
@@ -59,8 +50,17 @@ export default function PersonalData() {
       lines: [
         "Berlin, Germany.",
         "Social Media Team Coordinator.",
-        "2024–Present",
+        "10/2024 – Present",
         "Refreshed the hostel's visual identity for social media, produced promotional content, and managed digital communication."
+      ]
+    },
+    {
+      title: "Art Xbition, Berlin.",
+      lines: [
+        "Berlin, Germany.",
+        "Co-founder & Creative Direction.",
+        "07/2024 – 03/2026",
+        "Designed the exhibition series' visual identity, researched and selected emerging artists, and managed event logistics and timelines."
       ]
     },
     {
@@ -68,7 +68,7 @@ export default function PersonalData() {
       lines: [
         "Berlin, Germany.",
         "Graphic Designer.",
-        "2023/2024"
+        "03/2023 – 07/2024"
       ]
     },
     {
@@ -76,7 +76,7 @@ export default function PersonalData() {
       lines: [
         "Málaga, Spain.",
         "Graphic Design Internship.",
-        "2020/2021",
+        "10/2019 – 08/2021",
         "Designed exhibition catalogues, posters, and advertising campaigns for university cultural events."
       ]
     },
@@ -193,7 +193,11 @@ export default function PersonalData() {
           <p className="text-lg leading-relaxed columns-1 md:columns-2 gap-6 sm:gap-8">
             {"I'm a Spanish designer based in Berlin, with a foundation in Fine Arts that shapes how I approach every project, blending artistic sensibility with technical expertise."}
             <br /><br />
-            {"I work across two connected tracks. In "}
+            {"I work across three connected tracks. In "}
+            <strong>{"brand and graphic design"}</strong>
+            {", I take an identity the whole way — concept sketch to print file — from an independent exhibition series I co-founded in Berlin to "}
+            <strong>{"19 published exhibition catalogues"}</strong>
+            {" and a company-wide rebrand I helped deliver. In "}
             <strong>{"social media and content"}</strong>
             {", I build and run brand presence end to end — most recently averaging "}
             <strong>{"34.94% LinkedIn engagement over 90 days at CarOnSale"}</strong>

@@ -72,7 +72,7 @@ export default function CarOnSale() {
       footer={
         <ProjectFooter
           sections={{
-            Role: ["Social Media & Design"],
+            Role: ["Social Media & Design Intern"],
             Dates: ["2025 – 2026"],
             Entity: ["CarOnSale"],
             "Creative Team": ["CRU Design Agency", "Nuri Schömann", "María Sánchez"],

@@ -52,8 +52,19 @@ export default function SunflowerHostel() {
           {" output — planning, briefing, and design. Using Procreate, Adobe Creative Suite, and Canva, I built a refreshed visual identity across video, reels, and illustrated assets, capturing the hostel's rooms, activities, and atmosphere."}
         </>,
         <>
-          {"I built the presence from scratch and have run a full year of sustained multi-format content. Engagement analysis showed reels outperforming every other format, so I shifted the content mix toward them — "}
-          <strong>{"followers grew ~44% over the year."}</strong>
+          {"I built the presence from scratch and have run a full year of sustained multi-format content — "}
+          <strong>{"104 pieces"}</strong>
+          {" across feed, reels, and stories, at a steady two posts and two reels a month with no gaps. Engagement analysis showed reels outperforming every other format at roughly "}
+          <strong>{"2.9× the interactions of a feed post"}</strong>
+          {", so I shifted the content mix toward them — "}
+          <strong>{"followers grew ~44% over the year, from 1,193 to 1,715, with positive net growth in every single month."}</strong>
+        </>,
+        <>
+          {"The reach went well past the existing audience: "}
+          <strong>{"78.7% of the accounts engaging in the most recent quarter weren't followers yet."}</strong>
+          {" And the audience that formed matches who actually books the hostel — "}
+          <strong>{"41.9% aged 25–34"}</strong>
+          {", concentrated in Berlin, Germany, the UK, the US, Italy, and the Netherlands."}
         </>,
       ]}
       galleryComponent={<Gallery images={images} gridCols={1} />}
