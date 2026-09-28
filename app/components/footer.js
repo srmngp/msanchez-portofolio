@@ -5,6 +5,7 @@ import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { designProjectRoutes } from "../data/designProjects"
 import { artProductionRoutes } from "../data/artProductionProjects"
+import { COOKIE_SETTINGS_EVENT } from "../lib/analytics.mjs"
 
 export default function Footer() {
     const pathname = usePathname()
@@ -118,6 +119,15 @@ export default function Footer() {
 
                     <div className="flex-1 text-center">
                         <p className="text-sm">© 2026 Maria Sanchez Molina</p>
+                        {process.env.NEXT_PUBLIC_POSTHOG_KEY && (
+                            <button
+                                type="button"
+                                onClick={() => window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT))}
+                                className="text-xs underline hover:text-green-500 transition-colors cursor-pointer"
+                            >
+                                Cookie settings
+                            </button>
+                        )}
                     </div>
 
                     <div className="flex items-center">

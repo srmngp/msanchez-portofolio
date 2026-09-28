@@ -4,6 +4,7 @@ import posthog from "posthog-js"
 import { PostHogProvider as PHProvider } from "posthog-js/react"
 import { useEffect } from "react"
 import { safeStorage, readConsent, applyConsent, eventFromClick } from "../lib/analytics.mjs"
+import CookieBanner from "./CookieBanner"
 
 const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY
 
@@ -34,5 +35,10 @@ export default function PostHogProvider({ children }) {
     }, [])
 
     if (!KEY) return children
-    return <PHProvider client={posthog}>{children}</PHProvider>
+    return (
+        <PHProvider client={posthog}>
+            {children}
+            <CookieBanner />
+        </PHProvider>
+    )
 }
