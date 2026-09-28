@@ -17,8 +17,8 @@ export default function CookieBanner() {
 
     function choose(value) {
         writeConsent(safeStorage(), value)
-        applyConsent(posthog, value)
         setOpen(false)
+        applyConsent(posthog, value)
     }
 
     if (!open) return null

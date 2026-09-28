@@ -29,7 +29,7 @@ function fakePosthog(persistence = "localStorage+cookie") {
     const calls = []
     return {
         calls,
-        get_config: (key) => (key === "persistence" ? persistence : undefined),
+        config: { persistence },
         set_config: (c) => calls.push(["set_config", c]),
         startSessionRecording: () => calls.push(["startSessionRecording"]),
         stopSessionRecording: () => calls.push(["stopSessionRecording"]),

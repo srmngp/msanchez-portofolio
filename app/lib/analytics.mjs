@@ -48,7 +48,7 @@ export function applyConsent(posthog, consent) {
     } else if (consent === "denied") {
         posthog.stopSessionRecording()
         // Already cookieless: keep the identity so the visit isn't split in two.
-        if (posthog.get_config("persistence") === "memory") return
+        if (posthog.config?.persistence === "memory") return
         // Revoking an earlier "granted": reset() rotates the identity, then migrating to
         // memory clears the ph_* cookie/localStorage. Order matters: reset() writes the
         // new id to the active store, so the migration must come last.
