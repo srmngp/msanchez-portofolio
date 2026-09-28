@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { designProjectRoutes } from "../data/designProjects"
 import { artProductionRoutes } from "../data/artProductionProjects"
@@ -128,15 +129,20 @@ export default function Footer() {
 
                     <div className="flex-1 text-center">
                         <p className="text-sm">© 2026 Maria Sanchez Molina</p>
-                        {process.env.NEXT_PUBLIC_POSTHOG_KEY && (
-                            <button
-                                type="button"
-                                onClick={() => window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT))}
-                                className="text-xs underline hover:text-green-500 transition-colors cursor-pointer"
-                            >
-                                Cookie settings
-                            </button>
-                        )}
+                        <div className="flex justify-center gap-4">
+                            <Link href="/privacy" className="text-xs underline hover:text-green-500 transition-colors">
+                                Privacy
+                            </Link>
+                            {process.env.NEXT_PUBLIC_POSTHOG_KEY && (
+                                <button
+                                    type="button"
+                                    onClick={() => window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT))}
+                                    className="text-xs underline hover:text-green-500 transition-colors cursor-pointer"
+                                >
+                                    Cookie settings
+                                </button>
+                            )}
+                        </div>
                     </div>
 
                     <div className="flex items-center">

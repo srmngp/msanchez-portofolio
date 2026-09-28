@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import { usePostHog } from "posthog-js/react"
 import { safeStorage, readConsent, writeConsent, applyConsent, COOKIE_SETTINGS_EVENT } from "../lib/analytics.mjs"
@@ -32,8 +33,8 @@ export default function CookieBanner() {
             className="fixed z-50 bottom-4 inset-x-4 md:left-auto md:right-6 md:max-w-sm bg-white text-black border border-black p-4 text-sm shadow-lg"
         >
             <p className="mb-3">
-                I use analytics cookies to understand how visitors use this portfolio and improve it.
-                If you decline, anonymous usage is still measured without cookies.
+                I use analytics cookies to understand how visitors use this portfolio and improve it.{" "}
+                <Link href="/privacy" className="underline hover:text-green-500 transition-colors">Privacy policy</Link>
             </p>
             <div className="flex gap-3">
                 <button type="button" className={button} onClick={() => choose("denied")}>Reject</button>
