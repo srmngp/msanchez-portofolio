@@ -3,7 +3,7 @@
 import posthog from "posthog-js"
 import { PostHogProvider as PHProvider } from "posthog-js/react"
 import { useEffect } from "react"
-import { safeStorage, readConsent, applyConsent, eventFromClick } from "../lib/analytics.mjs"
+import { safeStorage, readConsent, persistenceConfig, eventFromClick } from "../lib/analytics.mjs"
 import CookieBanner from "./CookieBanner"
 
 const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY
@@ -20,10 +20,8 @@ export default function PostHogProvider({ children }) {
             autocapture: true,
             enable_heatmaps: true,
             // Cookieless until the visitor accepts the banner.
-            persistence: "memory",
-            disable_session_recording: true,
+            ...persistenceConfig(readConsent(safeStorage())),
         })
-        if (readConsent(safeStorage()) === "granted") applyConsent(posthog, "granted")
 
         function onClick(e) {
             const event = eventFromClick(e.target, window.location.href)

@@ -6,6 +6,7 @@ import {
     writeConsent,
     applyConsent,
     eventFromClick,
+    persistenceConfig,
 } from "./analytics.mjs"
 
 function memoryStorage(initial = {}) {
@@ -24,10 +25,11 @@ const throwingStorage = {
     removeItem() { throw new Error("SecurityError") },
 }
 
-function fakePosthog() {
+function fakePosthog(persistence = "localStorage+cookie") {
     const calls = []
     return {
         calls,
+        get_config: (key) => (key === "persistence" ? persistence : undefined),
         set_config: (c) => calls.push(["set_config", c]),
         startSessionRecording: () => calls.push(["startSessionRecording"]),
         stopSessionRecording: () => calls.push(["stopSessionRecording"]),
@@ -89,6 +91,25 @@ test("applyConsent denied stops recording, clears stored ids, goes back to memor
         ["reset"],
         ["set_config", { persistence: "memory" }],
     ])
+})
+
+test("applyConsent denied on a cookieless session only stops recording (keeps identity)", () => {
+    const ph = fakePosthog("memory")
+    applyConsent(ph, "denied")
+    assert.deepEqual(ph.calls, [["stopSessionRecording"]])
+})
+
+test("persistenceConfig restores stored identity for granted visitors at init", () => {
+    assert.deepEqual(persistenceConfig("granted"), {
+        persistence: "localStorage+cookie",
+        disable_session_recording: false,
+    })
+})
+
+test("persistenceConfig is cookieless without recording when denied or undecided", () => {
+    const cookieless = { persistence: "memory", disable_session_recording: true }
+    assert.deepEqual(persistenceConfig("denied"), cookieless)
+    assert.deepEqual(persistenceConfig(null), cookieless)
 })
 
 test("applyConsent with no decision does nothing", () => {

@@ -30,13 +30,28 @@ export function writeConsent(storage, value) {
     }
 }
 
+// Init-time persistence. Must be chosen at init (not switched afterwards) so a returning
+// visitor who accepted reads back their stored ph_* identity instead of overwriting it.
+export function persistenceConfig(consent) {
+    const granted = consent === "granted"
+    return {
+        persistence: granted ? "localStorage+cookie" : "memory",
+        disable_session_recording: !granted,
+    }
+}
+
+// Runtime consent change from the banner.
 export function applyConsent(posthog, consent) {
     if (consent === "granted") {
         posthog.set_config({ persistence: "localStorage+cookie" })
         posthog.startSessionRecording()
     } else if (consent === "denied") {
-        // reset() clears PostHog's ph_* cookie/localStorage left over from an earlier "granted".
         posthog.stopSessionRecording()
+        // Already cookieless: keep the identity so the visit isn't split in two.
+        if (posthog.get_config("persistence") === "memory") return
+        // Revoking an earlier "granted": reset() rotates the identity, then migrating to
+        // memory clears the ph_* cookie/localStorage. Order matters: reset() writes the
+        // new id to the active store, so the migration must come last.
         posthog.reset()
         posthog.set_config({ persistence: "memory" })
     }
