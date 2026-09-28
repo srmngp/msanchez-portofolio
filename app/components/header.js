@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { useFeatureFlagVariantKey } from "posthog-js/react"
 
 function isSelectedStyle(pathname, targetPath) {
     if (targetPath === "/") {
@@ -27,6 +28,8 @@ export default function Header() {
     useEffect(() => setOpen(false), [pathname])
 
     const currentLabel = currentPageLabel(pathname)
+    // A/B experiment "resume-label"; anything but "test" (incl. loading / no PostHog) is control.
+    const resumeLabel = useFeatureFlagVariantKey("resume-label") === "test" ? "Download CV" : "Resume"
 
     const navItems = [
         { href: "/", label: "Design Projects", target: "/" },
@@ -41,7 +44,7 @@ export default function Header() {
                 <ul className="hidden md:flex justify-between text-xl">
                     <li>
                         <a href="/2026-07_Maria_Sanchez_Resume.pdf" download data-ph-event="cv_downloaded" data-ph-placement="desktop" className="hover:text-green-500 transition-colors">
-                            Resume
+                            {resumeLabel}
                         </a>
                     </li>
                     <div className="flex space-x-20 ml-5">
@@ -66,7 +69,7 @@ export default function Header() {
                 {/* Mobile layout */}
                 <div className="md:hidden flex items-start justify-between text-base">
                     <a href="/2026-07_Maria_Sanchez_Resume.pdf" download data-ph-event="cv_downloaded" data-ph-placement="mobile" className="hover:text-green-500 transition-colors">
-                        Resume
+                        {resumeLabel}
                     </a>
 
                     <div className="flex flex-col items-end gap-3">
