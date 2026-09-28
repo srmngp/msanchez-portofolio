@@ -40,7 +40,7 @@ export default function Header() {
                 {/* Desktop layout */}
                 <ul className="hidden md:flex justify-between text-xl">
                     <li>
-                        <a href="/2026-07_Maria_Sanchez_Resume.pdf" download className="hover:text-green-500 transition-colors">
+                        <a href="/2026-07_Maria_Sanchez_Resume.pdf" download data-ph-event="cv_downloaded" data-ph-placement="desktop" className="hover:text-green-500 transition-colors">
                             Resume
                         </a>
                     </li>
@@ -65,7 +65,7 @@ export default function Header() {
 
                 {/* Mobile layout */}
                 <div className="md:hidden flex items-start justify-between text-base">
-                    <a href="/2026-07_Maria_Sanchez_Resume.pdf" download className="hover:text-green-500 transition-colors">
+                    <a href="/2026-07_Maria_Sanchez_Resume.pdf" download data-ph-event="cv_downloaded" data-ph-placement="mobile" className="hover:text-green-500 transition-colors">
                         Resume
                     </a>
 

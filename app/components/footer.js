@@ -70,6 +70,8 @@ export default function Footer() {
                     <div className="text-center md:text-left md:flex-none">
                         <a
                             href="mailto:ms.maria.sanchez.molina@gmail.com"
+                            data-ph-event="contact_clicked"
+                            data-ph-channel="email"
                             className="text-sm hover:text-green-500 transition-colors break-words"
                         >
                             ms.maria.sanchez.molina@gmail.com
@@ -79,6 +81,8 @@ export default function Footer() {
                     <div className="text-center md:flex-1 md:min-w-0">
                         <a
                             href="https://www.instagram.com/m.sanchezmolina"
+                            data-ph-event="contact_clicked"
+                            data-ph-channel="instagram"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm hover:text-green-500 transition-colors"
@@ -90,6 +94,8 @@ export default function Footer() {
                     <div className="text-center md:flex-1 md:min-w-0">
                         <a
                             href="https://www.linkedin.com/in/msanchezmolina"
+                            data-ph-event="contact_clicked"
+                            data-ph-channel="linkedin"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm hover:text-green-500 transition-colors"
@@ -109,6 +115,9 @@ export default function Footer() {
                             <button
                                 aria-label="Previous project"
                                 onClick={handlePrev}
+                                data-ph-event="project_nav"
+                                data-ph-direction="prev"
+                                data-ph-from={pathname}
                                 title="Previous"
                                 className="p-2 cursor-pointer"
                             >
@@ -135,6 +144,9 @@ export default function Footer() {
                             <button
                                 aria-label="Next project"
                                 onClick={handleNext}
+                                data-ph-event="project_nav"
+                                data-ph-direction="next"
+                                data-ph-from={pathname}
                                 title="Next"
                                 className="p-2 cursor-pointer"
                             >
